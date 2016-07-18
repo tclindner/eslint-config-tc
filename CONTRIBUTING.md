@@ -34,6 +34,12 @@ eslint-config-tc utilizes JSON Lint to ensure JSON files are valid.
 
 * [jsonlint](https://github.com/zaach/jsonlint)
 
+#### package.json
+
+eslint-config-tc utilizes npm-package-json-lint to ensure the package.json file is valid.
+
+* [npm-package-json-lint](https://github.com/tclindner/npm-package-json-lint)
+
 #### Checking coding style
 
 Run `npm run lint` before committing to ensure your changes follow our coding standards.
