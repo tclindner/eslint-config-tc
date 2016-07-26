@@ -22,10 +22,14 @@ module.exports = {
     'no-empty-character-class': 'error',
     'no-ex-assign': 'error',
     'no-extra-boolean-cast': 'error',
-    'no-extra-parens': ['error', 'all', {'conditionalAssign': false}],
+    'no-extra-parens': ['error', 'all', {
+      'conditionalAssign': false
+    }],
     'no-extra-semi': 'error',
     'no-func-assign': 'error',
-    'no-invalid-regexp': ['error', {'allowConstructorFlags': ['u', 'y']}],
+    'no-invalid-regexp': ['error', {
+      'allowConstructorFlags': ['u', 'y']
+    }],
     'no-irregular-whitespace': 'error',
     'no-negated-in-lhs': 'error',
     'no-obj-calls': 'error',
@@ -137,19 +141,25 @@ module.exports = {
     'max-nested-callbacks': ['error', 3],
     'max-params': ['error', 4],
     'max-statements': ['error', 12],
-    'max-statements-per-line': ['error', {'max': 1}],
+    'max-statements-per-line': ['error', {
+      'max': 1
+    }],
     'new-cap': 'error',
     'new-parens': 'error',
     'newline-after-var': 'error',
     'newline-before-return': 'error',
-    'newline-per-chained-call': ['error', {'ignoreChainWithDepth': 3}],
+    'newline-per-chained-call': ['error', {
+      'ignoreChainWithDepth': 3
+    }],
     'no-array-constructor': 'error',
     'no-bitwise': 'error',
     'no-continue': 'error',
     'no-inline-comments': 'error',
     'no-lonely-if': 'error',
     'no-mixed-spaces-and-tabs': 'error',
-    'no-multiple-empty-lines': ['error', {'max': 2}],
+    'no-multiple-empty-lines': ['error', {
+      'max': 2
+    }],
     'no-negated-condition': 'error',
     'no-nested-ternary': 'error',
     'no-new-object': 'error',
@@ -160,7 +170,9 @@ module.exports = {
     'object-curly-spacing': ['error', 'never'],
     'one-var': ['error', 'never'],
     'operator-assignment': ['error', 'always'],
-    'padded-blocks': ['error', {'classes': 'always'}],
+    'padded-blocks': ['error', {
+      'classes': 'always'
+    }],
     'quote-props': ['error', 'consistent'],
     'quotes': ['error', 'single'],
     'require-jsdoc': ['error', {
@@ -210,7 +222,9 @@ module.exports = {
     }],
     'constructor-super': 'error',
     'no-class-assign': 'error',
-    'no-confusing-arrow': ['error', {'allowParens': true}],
+    'no-confusing-arrow': ['error', {
+      'allowParens': true
+    }],
     'no-const-assign': 'error',
     'no-dupe-class-members': 'error',
     'no-duplicate-imports': 'error',
@@ -224,6 +238,25 @@ module.exports = {
     'prefer-template': 'error',
     'template-curly-spacing': 'error',
     'object-property-newline': 'error',
-    'no-useless-rename': 'error'
+    'no-useless-rename': 'error',
+    'rest-spread-spacing': ['error', 'never'],
+    'max-lines': ['error', {
+      'max': 300,
+      'skipComments': true,
+      'skipBlankLines': true
+    }],
+    'object-curly-newline': ['error', {
+      'minProperties': 1
+    }],
+    'no-mixed-operators': ['error', {
+      'groups': [
+        ['+', '-', '*', '/', '%', '**'],
+        ['&', '|', '^', '~', '<<', '>>', '>>>'],
+        ['==', '!=', '===', '!==', '>', '>=', '<', '<='],
+        ['&&', '||'],
+        ['in', 'instanceof']
+      ],
+      'allowSamePrecedence': true
+    }]
   }
 };
