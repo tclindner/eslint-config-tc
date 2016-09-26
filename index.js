@@ -31,7 +31,7 @@ module.exports = {
       'allowConstructorFlags': ['u', 'y']
     }],
     'no-irregular-whitespace': 'error',
-    'no-negated-in-lhs': 'error',
+    'no-unsafe-negation': 'error',
     'no-obj-calls': 'error',
     'no-regex-spaces': 'error',
     'no-sparse-arrays': 'error',
@@ -74,7 +74,7 @@ module.exports = {
     }],
     'no-multi-spaces': 'error',
     'no-multi-str': 'error',
-    'no-native-reassign': 'error',
+    'no-global-assign': 'error',
     'no-new-func': 'error',
     'no-new-wrappers': 'error',
     'no-octal': 'error',
@@ -257,6 +257,16 @@ module.exports = {
         ['in', 'instanceof']
       ],
       'allowSamePrecedence': true
+    }],
+    'no-tabs': 'error',
+    'no-template-curly-in-string': 'error',
+    'symbol-description': 'error',
+    'line-comment-position': ['error', {
+      'position': 'above'
+    }],
+    'lines-around-directive': ['error', {
+      'before': 'never',
+      'after': 'always'
     }]
   }
 };
