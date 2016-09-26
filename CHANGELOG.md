@@ -11,6 +11,28 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
+## [1.2.0] - 2016-09-25
+### Added
+Added two new rules from ESLint v3.5.0.
+
+* [line-comment-position](http://eslint.org/docs/rules/line-comment-position)
+* [lines-around-directive](http://eslint.org/docs/rules/lines-around-directive)
+
+Added one new rule from ESLint v3.4.0.
+
+* [symbol-description](http://eslint.org/docs/rules/symbol-description)
+
+Added one new rule from ESLint v3.3.0.
+
+* [no-template-curly-in-string](http://eslint.org/docs/rules/no-template-curly-in-string)
+
+Added one new rule from ESLint v3.2.0.
+
+* [no-tabs](http://eslint.org/docs/rules/no-tabs) - Adds `disallowTabs` compatibility from JSCS.
+
+### Changed
+* Updated `no-native-reassign` => `no-global-assign` and `no-negated-in-lhs` => `no-unsafe-negation` because of [deprecation notice](http://eslint.org/blog/2016/08/eslint-v3.3.0-released)
+
 ## [1.1.0] - 2016-07-25
 ### Added
 Added four new rules from ESLint v2.12.0.
