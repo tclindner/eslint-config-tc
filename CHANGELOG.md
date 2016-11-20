@@ -11,6 +11,16 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
+## [1.3.0] - 2016-11-20
+### Added
+Added one new rules from ESLint v3.10.0.
+
+* [no-return-await](http://eslint.org/docs/rules/no-return-await)
+
+Added one new rule from ESLint v3.9.0.
+
+* [no-useless-return](http://eslint.org/docs/rules/no-useless-return)
+
 ## [1.2.0] - 2016-09-25
 ### Added
 Added two new rules from ESLint v3.5.0.
