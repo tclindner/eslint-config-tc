@@ -267,6 +267,8 @@ module.exports = {
     'lines-around-directive': ['error', {
       'before': 'never',
       'after': 'always'
-    }]
+    }],
+    'no-useless-return': 'error',
+    'no-return-await': 'error'
   }
 };
