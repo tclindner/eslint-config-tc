@@ -11,6 +11,16 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
+## [1.4.0] - 2017-01-08
+### Added
+Added one new rules from ESLint v3.12.0.
+
+* [no-await-in-loop](http://eslint.org/docs/rules/no-await-in-loop)
+
+Added one new rules from ESLint v3.11.0.
+
+* [require-await](http://eslint.org/docs/rules/require-await)
+
 ## [1.3.0] - 2016-11-20
 ### Added
 Added one new rules from ESLint v3.10.0.

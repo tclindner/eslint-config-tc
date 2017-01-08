@@ -269,6 +269,8 @@ module.exports = {
       'after': 'always'
     }],
     'no-useless-return': 'error',
-    'no-return-await': 'error'
+    'no-return-await': 'error',
+    'require-await': 'error',
+    'no-await-in-loop': 'error'
   }
 };
