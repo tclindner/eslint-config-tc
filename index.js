@@ -271,6 +271,8 @@ module.exports = {
     'no-useless-return': 'error',
     'no-return-await': 'error',
     'require-await': 'error',
-    'no-await-in-loop': 'error'
+    'no-await-in-loop': 'error',
+    'prefer-promise-reject-errors': 'error',
+    'no-multi-assign': 'error'
   }
 };

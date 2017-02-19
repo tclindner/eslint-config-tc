@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-tc",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "ESLint shareable config for TC's projects",
   "keywords": [
     "eslintconfig",
@@ -31,18 +31,19 @@
     "test": "mocha test"
   },
   "devDependencies": {
-    "eslint": "^3.13.0",
+    "eslint": "^3.15.0",
     "eslint-formatter-pretty": "^1.1.0",
     "is-plain-obj": "^1.1.0",
     "jscs": "^3.0.7",
     "jsonlint": "^1.6.2",
     "mocha": "^3.1.2",
-    "npm-package-json-lint": "^1.4.0",
-    "should": "^11.1.1",
-    "temp-write": "^2.1.0"
+    "npm-package-json-lint": "^2.0.2",
+    "npm-package-json-lint-config-tc": "^1.0.0",
+    "should": "^11.2.0",
+    "temp-write": "^3.1.0"
   },
   "peerDependencies": {
-    "eslint": "^3.13.0"
+    "eslint": "^3.15.0"
   },
   "engines": {
     "node": ">=4.2.0",
