@@ -22,6 +22,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 * [no-new](http://eslint.org/docs/rules/no-new)
 * [no-unsafe-finally](http://eslint.org/docs/rules/no-unsafe-finally)
 * [no-unused-vars](http://eslint.org/docs/rules/no-unused-vars)
+* Add override support for test files
 
 ### Changed
 * `arrow-body-style` to `as-needed`

@@ -7,9 +7,7 @@ module.exports = {
   },
   'env': {
     'node': true,
-    'es6': true,
-    'mocha': true,
-    'jquery': true
+    'es6': true
   },
   'rules': {
     'comma-dangle': ['error', 'never'],
@@ -285,5 +283,19 @@ module.exports = {
     'no-new': 'error',
     'no-unsafe-finally': 'error',
     'no-unused-vars': ['error', {vars: 'local', args: 'after-used', ignoreRestSiblings: true}]
-  }
+  },
+  'overrides': [
+    {
+      files: [
+        '**/*.spec.js',
+        '**/*.test.js'
+      ],
+      env: {mocha: true},
+      rules: {
+        'max-statements': 'off',
+        'newline-after-var': 'off',
+        'no-unused-vars': 'off'
+      }
+    }
+  ]
 };
