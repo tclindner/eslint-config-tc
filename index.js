@@ -292,6 +292,7 @@ module.exports = {
       ],
       env: {mocha: true},
       rules: {
+        'max-nested-callbacks': 'off',
         'max-statements': 'off',
         'newline-after-var': 'off',
         'no-unused-vars': 'off'

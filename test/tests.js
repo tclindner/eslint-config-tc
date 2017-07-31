@@ -1,33 +1,34 @@
 'use strict';
 
-const should = require('should');
-
+const chai = require('chai');
 const isPlainObj = require('is-plain-obj');
 const eslintConfig = require('../index.js');
 const lint = require('./helper/testHelper.js');
 
+const should = chai.should();
+
 describe('eslint config tests', () => {
   context('eslint object', () => {
     it('should be an object', () => {
-      isPlainObj(eslintConfig).should.equal(true);
+      isPlainObj(eslintConfig).should.be.true;
     });
   });
 
   context('parserOptions', () => {
     it('should be an object', () => {
-      isPlainObj(eslintConfig.parserOptions).should.equal(true);
+      isPlainObj(eslintConfig.parserOptions).should.be.true;
     });
   });
 
   context('env', () => {
     it('should be an array', () => {
-      isPlainObj(eslintConfig.env).should.equal(true);
+      isPlainObj(eslintConfig.env).should.be.true;
     });
   });
 
   context('rules', () => {
     it('should be an object', () => {
-      isPlainObj(eslintConfig.rules).should.equal(true);
+      isPlainObj(eslintConfig.rules).should.be.true;
     });
   });
 
