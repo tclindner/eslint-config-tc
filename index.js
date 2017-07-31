@@ -23,7 +23,9 @@ module.exports = {
     'no-ex-assign': 'error',
     'no-extra-boolean-cast': 'error',
     'no-extra-parens': ['error', 'all', {
-      'conditionalAssign': false
+      'conditionalAssign': true,
+      'nestedBinaryExpressions': false,
+      'returnAssign': false
     }],
     'no-extra-semi': 'error',
     'no-func-assign': 'error',
@@ -39,7 +41,7 @@ module.exports = {
     'use-isnan': 'error',
     'valid-jsdoc': 'error',
     'no-unexpected-multiline': 'error',
-    'valid-typeof': 'error',
+    'valid-typeof': ['error', {requireStringLiterals: true}],
     'accessor-pairs': 'error',
     'array-callback-return': 'error',
     'block-scoped-var': 'error',
@@ -48,7 +50,7 @@ module.exports = {
     'curly': 'error',
     'default-case': 'error',
     'dot-location': ['error', 'property'],
-    'dot-notation': 'error',
+    'dot-notation': ['error', {allowKeywords: true}],
     'eqeqeq': 'error',
     'no-caller': 'error',
     'no-case-declarations': 'error',
@@ -138,7 +140,7 @@ module.exports = {
     'keyword-spacing': 'error',
     'linebreak-style': ['error', 'unix'],
     'max-depth': ['error', 4],
-    'max-nested-callbacks': ['error', 3],
+    'max-nested-callbacks': ['error', 4],
     'max-params': ['error', 4],
     'max-statements': ['error', 12],
     'max-statements-per-line': ['error', {
@@ -149,7 +151,7 @@ module.exports = {
     'newline-after-var': 'error',
     'newline-before-return': 'error',
     'newline-per-chained-call': ['error', {
-      'ignoreChainWithDepth': 3
+      'ignoreChainWithDepth': 4
     }],
     'no-array-constructor': 'error',
     'no-bitwise': 'error',
@@ -158,7 +160,8 @@ module.exports = {
     'no-lonely-if': 'error',
     'no-mixed-spaces-and-tabs': 'error',
     'no-multiple-empty-lines': ['error', {
-      'max': 2
+      'max': 2,
+      'maxEOF': 1
     }],
     'no-negated-condition': 'error',
     'no-nested-ternary': 'error',
@@ -173,8 +176,8 @@ module.exports = {
     'padded-blocks': ['error', {
       'classes': 'always'
     }],
-    'quote-props': ['error', 'consistent'],
-    'quotes': ['error', 'single'],
+    'quote-props': ['error', 'consistent-as-needed', {keywords: true}],
+    'quotes': ['error', 'single', {avoidEscape: true}],
     'require-jsdoc': ['error', {
       'require': {
         'FunctionDeclaration': true,
@@ -187,7 +190,6 @@ module.exports = {
       'before': false,
       'after': false
     }],
-    'sort-imports': 'error',
     'sort-vars': 'error',
     'space-before-blocks': ['error', {
       'functions': 'always',
@@ -214,7 +216,7 @@ module.exports = {
       'beforeBlockComment': true,
       'beforeLineComment': true
     }],
-    'arrow-body-style': ['error', 'always'],
+    'arrow-body-style': ['error', 'as-needed'],
     'arrow-parens': ['error', 'always'],
     'arrow-spacing': ['error', {
       'before': true,
@@ -232,12 +234,11 @@ module.exports = {
     'no-this-before-super': 'error',
     'no-useless-constructor': 'error',
     'no-var': 'error',
-    'object-shorthand': 'error',
     'prefer-const': 'error',
     'prefer-rest-params': 'error',
     'prefer-template': 'error',
     'template-curly-spacing': 'error',
-    'object-property-newline': 'error',
+    'object-property-newline': ['error', {allowMultiplePropertiesPerLine: true}],
     'no-useless-rename': 'error',
     'rest-spread-spacing': ['error', 'never'],
     'max-lines': ['error', {
@@ -246,7 +247,8 @@ module.exports = {
       'skipBlankLines': true
     }],
     'object-curly-newline': ['error', {
-      'minProperties': 1
+      ObjectExpression: {'minProperties': 0, multiline: true},
+      ObjectPattern: 'never'
     }],
     'no-mixed-operators': ['error', {
       'groups': [
@@ -273,6 +275,15 @@ module.exports = {
     'require-await': 'error',
     'no-await-in-loop': 'error',
     'prefer-promise-reject-errors': 'error',
-    'no-multi-assign': 'error'
+    'no-multi-assign': 'error',
+    'class-methods-use-this': 'error',
+    'func-call-spacing': ['error', 'never'],
+    'jsx-quotes': ['error', 'prefer-double'],
+    'no-console': 'warn',
+    'no-debugger': 'error',
+    'no-else-return': 'error',
+    'no-new': 'error',
+    'no-unsafe-finally': 'error',
+    'no-unused-vars': ['error', {vars: 'local', args: 'after-used', ignoreRestSiblings: true}]
   }
 };

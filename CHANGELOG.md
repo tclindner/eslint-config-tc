@@ -11,6 +11,34 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
+## [2.0.0] - 2017-07-30
+### Added
+* [class-methods-use-this](http://eslint.org/docs/rules/class-methods-use-this)
+* [func-call-spacing](http://eslint.org/docs/rules/func-call-spacing)
+* [jsx-quotes](http://eslint.org/docs/rules/jsx-quotes)
+* [no-console](http://eslint.org/docs/rules/no-console)
+* [no-debugger](http://eslint.org/docs/rules/no-debugger)
+* [no-else-return](http://eslint.org/docs/rules/no-else-return)
+* [no-new](http://eslint.org/docs/rules/no-new)
+* [no-unsafe-finally](http://eslint.org/docs/rules/no-unsafe-finally)
+* [no-unused-vars](http://eslint.org/docs/rules/no-unused-vars)
+
+### Changed
+* `arrow-body-style` to `as-needed`
+* `dot-notation` to allow keywords.
+* `max-nested-callbacks` to 4
+* `newline-per-chained-call` to 4
+* `no-extra-parens` to allow exceptions for nested binary expressions and returns
+* `no-multiple-empty-lines` with EOF settings for 1 line
+* `object-curly-newline` to account for destructuring and add multiline support
+* `object-property-newline` with multiline support
+* `quote-props` to be consistent only when needed
+* `quote` to avoid escaping
+* `valid-typeof` so it requires string literals
+
+### Removed
+* [sort-imports](http://eslint.org/docs/rules/sort-imports)
+
 ## [1.5.0] - 2017-02-18
 ### Added
 Added two new rules from ESLint v3.14.0.
