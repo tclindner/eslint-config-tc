@@ -1,5 +1,7 @@
 'use strict';
 
+/* eslint max-lines: 'off' */
+
 module.exports = {
   parserOptions: {
     ecmaVersion: 6,
@@ -27,9 +29,7 @@ module.exports = {
     }],
     'no-extra-semi': 'error',
     'no-func-assign': 'error',
-    'no-invalid-regexp': ['error', {
-      allowConstructorFlags: ['u', 'y']
-    }],
+    'no-invalid-regexp': ['error', {allowConstructorFlags: ['u', 'y']}],
     'no-irregular-whitespace': 'error',
     'no-unsafe-negation': 'error',
     'no-obj-calls': 'error',
@@ -69,9 +69,7 @@ module.exports = {
     'no-labels': 'error',
     'no-lone-blocks': 'error',
     'no-loop-func': 'error',
-    'no-magic-numbers': ['error', {
-      ignoreArrayIndexes: true
-    }],
+    'no-magic-numbers': ['error', {ignoreArrayIndexes: true}],
     'no-multi-spaces': 'error',
     'no-multi-str': 'error',
     'no-global-assign': 'error',
@@ -141,16 +139,12 @@ module.exports = {
     'max-nested-callbacks': ['error', 4],
     'max-params': ['error', 4],
     'max-statements': ['error', 12],
-    'max-statements-per-line': ['error', {
-      max: 1
-    }],
+    'max-statements-per-line': ['error', {max: 1}],
     'new-cap': 'error',
     'new-parens': 'error',
     'newline-after-var': 'error',
     'newline-before-return': 'error',
-    'newline-per-chained-call': ['error', {
-      ignoreChainWithDepth: 4
-    }],
+    'newline-per-chained-call': ['error', {ignoreChainWithDepth: 4}],
     'no-array-constructor': 'error',
     'no-bitwise': 'error',
     'no-continue': 'error',
@@ -171,9 +165,7 @@ module.exports = {
     'object-curly-spacing': ['error', 'never'],
     'one-var': ['error', 'never'],
     'operator-assignment': ['error', 'always'],
-    'padded-blocks': ['error', {
-      classes: 'always'
-    }],
+    'padded-blocks': ['error', {classes: 'always'}],
     'quote-props': ['error', 'consistent-as-needed', {keywords: true}],
     'quotes': ['error', 'single', {avoidEscape: true}],
     'require-jsdoc': ['error', {
@@ -222,9 +214,7 @@ module.exports = {
     }],
     'constructor-super': 'error',
     'no-class-assign': 'error',
-    'no-confusing-arrow': ['error', {
-      allowParens: true
-    }],
+    'no-confusing-arrow': ['error', {allowParens: true}],
     'no-const-assign': 'error',
     'no-dupe-class-members': 'error',
     'no-duplicate-imports': 'error',
@@ -261,9 +251,7 @@ module.exports = {
     'no-tabs': 'error',
     'no-template-curly-in-string': 'error',
     'symbol-description': 'error',
-    'line-comment-position': ['error', {
-      position: 'above'
-    }],
+    'line-comment-position': ['error', {position: 'above'}],
     'lines-around-directive': ['error', {
       before: 'never',
       after: 'always'
@@ -295,6 +283,7 @@ module.exports = {
         'max-nested-callbacks': 'off',
         'max-statements': 'off',
         'newline-after-var': 'off',
+        'no-unused-expressions': 'off',
         'no-unused-vars': 'off'
       }
     }
