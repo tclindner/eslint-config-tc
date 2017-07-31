@@ -36,11 +36,11 @@ describe('eslint config tests', () => {
     it('eslint should run without failing', () => {
       const code = '\'use strict\';\n\nconsole.log("doh, I used the wrong quotes");\n';
       const expectedErrorLineNum = 3;
-      const expectedErrorColumnNum = 13;
+      const expectedErrorColumnNum = 1;
       const errors = lint(code, eslintConfig);
       const error = errors[0];
 
-      error.ruleId.should.equal('quotes');
+      error.ruleId.should.equal('no-console');
       error.line.should.equal(expectedErrorLineNum);
       error.column.should.equal(expectedErrorColumnNum);
       error.source.should.equal('console.log("doh, I used the wrong quotes");');
