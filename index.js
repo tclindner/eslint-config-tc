@@ -1,6 +1,6 @@
 'use strict';
 
-/* eslint max-lines: 'off' */
+/* eslint id-length: 'off', max-lines: 'off' */
 
 module.exports = {
   parserOptions: {
@@ -235,7 +235,7 @@ module.exports = {
       skipBlankLines: true
     }],
     'object-curly-newline': ['error', {
-      ObjectExpression: {'minProperties': 0, multiline: true},
+      ObjectExpression: {minProperties: 0, multiline: true},
       ObjectPattern: 'never'
     }],
     'no-mixed-operators': ['error', {
@@ -272,7 +272,7 @@ module.exports = {
     'no-unsafe-finally': 'error',
     'no-unused-vars': ['error', {vars: 'local', args: 'after-used', ignoreRestSiblings: true}]
   },
-  'overrides': [
+  overrides: [
     {
       files: [
         '**/*.spec.js',
