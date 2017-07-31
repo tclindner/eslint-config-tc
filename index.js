@@ -284,7 +284,8 @@ module.exports = {
         'max-statements': 'off',
         'newline-after-var': 'off',
         'no-unused-expressions': 'off',
-        'no-unused-vars': 'off'
+        'no-unused-vars': 'off',
+        'object-curly-newline': 'off'
       }
     }
   ]

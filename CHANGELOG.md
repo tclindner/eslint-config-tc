@@ -11,6 +11,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
+## [2.1.0] - 2017-07-30
+### Added
+* `object-curly-newline` to test file override
+
 ## [2.0.0] - 2017-07-30
 ### Added
 * [class-methods-use-this](http://eslint.org/docs/rules/class-methods-use-this)
