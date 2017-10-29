@@ -1,6 +1,6 @@
 'use strict';
 
-/* eslint id-length: 'off', max-lines: 'off' */
+/* eslint id-length: 'off', max-lines: 'off', array-bracket-newline: 'off', array-element-newline: 'off' */
 
 module.exports = {
   parserOptions: {
@@ -142,8 +142,6 @@ module.exports = {
     'max-statements-per-line': ['error', {max: 1}],
     'new-cap': 'error',
     'new-parens': 'error',
-    'newline-after-var': 'error',
-    'newline-before-return': 'error',
     'newline-per-chained-call': ['error', {ignoreChainWithDepth: 4}],
     'no-array-constructor': 'error',
     'no-bitwise': 'error',
@@ -252,10 +250,6 @@ module.exports = {
     'no-template-curly-in-string': 'error',
     'symbol-description': 'error',
     'line-comment-position': ['error', {position: 'above'}],
-    'lines-around-directive': ['error', {
-      before: 'never',
-      after: 'always'
-    }],
     'no-useless-return': 'error',
     'no-return-await': 'error',
     'require-await': 'error',
@@ -270,7 +264,35 @@ module.exports = {
     'no-else-return': 'error',
     'no-new': 'error',
     'no-unsafe-finally': 'error',
-    'no-unused-vars': ['error', {vars: 'local', args: 'after-used', ignoreRestSiblings: true}]
+    'no-unused-vars': ['error', {vars: 'local', args: 'after-used', ignoreRestSiblings: true}],
+    'no-buffer-constructor': 'error',
+    'lines-between-class-members': ['error', 'always'],
+    'no-compare-neg-zero': 'error',
+    'semi-style': ['error', 'last'],
+    'padding-line-between-statements': [
+      'error',
+      {blankLine: 'always', prev: '*', next: 'return'},
+      {blankLine: 'always', prev: ['const', 'let', 'var'], next: '*'},
+      {blankLine: 'any', prev: ['const', 'let', 'var'], next: ['const', 'let', 'var']},
+      {blankLine: 'always', prev: 'directive', next: '*'},
+      {blankLine: 'always', prev: ['for', 'do', 'while'], next: '*'},
+      {blankLine: 'always', prev: '*', next: 'for'},
+      {blankLine: 'always', prev: 'import', next: '*'},
+      {blankLine: 'any', prev: 'import', next: 'import'},
+      {blankLine: 'always', prev: 'if', next: '*'},
+      {blankLine: 'always', prev: 'function', next: '*'},
+      {blankLine: 'always', prev: '*', next: 'function'},
+      {blankLine: 'always', prev: '*', next: 'export'},
+      {blankLine: 'always', prev: '*', next: 'cjs-export'},
+      {blankLine: 'always', prev: 'cjs-import', next: '*'},
+      {blankLine: 'any', prev: 'cjs-import', next: 'cjs-import'}
+    ],
+    'for-direction': 'error',
+    'switch-colon-spacing': 'error',
+    'getter-return': 'error',
+    'function-paren-newline': ['error', 'never'],
+    'array-element-newline': ['error', {minItems: 3}],
+    'array-bracket-newline': ['error', {multiline: true, minItems: 3}]
   },
   overrides: [
     {
@@ -282,10 +304,27 @@ module.exports = {
       rules: {
         'max-nested-callbacks': 'off',
         'max-statements': 'off',
-        'newline-after-var': 'off',
         'no-unused-expressions': 'off',
         'no-unused-vars': 'off',
-        'object-curly-newline': 'off'
+        'object-curly-newline': 'off',
+        'padding-line-between-statements': [
+          'error',
+          {blankLine: 'always', prev: '*', next: 'return'},
+          {blankLine: 'any', prev: ['const', 'let', 'var'], next: '*'},
+          {blankLine: 'any', prev: ['const', 'let', 'var'], next: ['const', 'let', 'var']},
+          {blankLine: 'always', prev: 'directive', next: '*'},
+          {blankLine: 'any', prev: ['for', 'do', 'while'], next: '*'},
+          {blankLine: 'any', prev: '*', next: 'for'},
+          {blankLine: 'always', prev: 'import', next: '*'},
+          {blankLine: 'any', prev: 'import', next: 'import'},
+          {blankLine: 'any', prev: 'if', next: '*'},
+          {blankLine: 'any', prev: 'function', next: '*'},
+          {blankLine: 'any', prev: '*', next: 'function'},
+          {blankLine: 'always', prev: '*', next: 'export'},
+          {blankLine: 'always', prev: '*', next: 'cjs-export'},
+          {blankLine: 'always', prev: 'cjs-import', next: '*'},
+          {blankLine: 'any', prev: 'cjs-import', next: 'cjs-import'}
+        ]
       }
     }
   ]

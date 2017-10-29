@@ -11,6 +11,35 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
+## [2.2.0] - 2017-10-29
+### Added
+
+Added one new rule from ESLint v4.9.0.
+* [lines-between-class-members](http://eslint.org/docs/rules/lines-between-class-members)
+
+Added one new rule from ESLint v4.6.0.
+* [function-paren-newline](http://eslint.org/docs/rules/function-paren-newline)
+
+Added one new rule from ESLint v4.2.0.
+* [getter-return](http://eslint.org/docs/rules/getter-return)
+
+Added four new rules from ESLint v4.0.0-beta.0
+* [semi-style](https://eslint.org/docs/4.0.0/rules/semi-style)
+* [padding-line-between-statements](https://eslint.org/docs/4.0.0/rules/padding-line-between-statements)
+* [for-direction](https://eslint.org/docs/4.0.0/rules/for-direction)
+* [switch-colon-spacing](https://eslint.org/docs/4.0.0/rules/switch-colon-spacing)
+
+Added one new rule from ESLint v4.0.0-alpha.0
+* [no-buffer-constructor](https://eslint.org/docs/rules/no-buffer-constructor)
+
+Added one new rule from ESLint v3.17.0
+* [no-compare-neg-zero](https://eslint.org/docs/rules/no-compare-neg-zero)
+
+### Removed
+* [lines-around-directive](https://eslint.org/docs/rules/lines-around-directive)
+* [newline-after-var](https://eslint.org/docs/rules/newline-after-var)
+* [newline-before-return](https://eslint.org/docs/rules/newline-before-return)
+
 ## [2.1.0] - 2017-07-30
 ### Added
 * `object-curly-newline` to test file override
