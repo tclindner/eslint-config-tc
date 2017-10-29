@@ -11,6 +11,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
+## [2.3.0] - 2017-10-29
+### Changed
+* `padding-line-between-statements` - multiple exports don't need new lines.
+* `array-element-newline` - disabled for tests
+* `array-bracket-newline` - disabled for tests
+
 ## [2.2.0] - 2017-10-29
 ### Added
 

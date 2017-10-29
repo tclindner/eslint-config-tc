@@ -284,7 +284,8 @@ module.exports = {
       {blankLine: 'always', prev: '*', next: 'function'},
       {blankLine: 'always', prev: '*', next: 'export'},
       {blankLine: 'always', prev: '*', next: 'cjs-export'},
-      {blankLine: 'always', prev: 'cjs-import', next: '*'},
+      {blankLine: 'any', prev: 'cjs-export', next: 'cjs-export'},
+      {blankLine: 'any', prev: 'cjs-import', next: '*'},
       {blankLine: 'any', prev: 'cjs-import', next: 'cjs-import'}
     ],
     'for-direction': 'error',
@@ -315,16 +316,18 @@ module.exports = {
           {blankLine: 'always', prev: 'directive', next: '*'},
           {blankLine: 'any', prev: ['for', 'do', 'while'], next: '*'},
           {blankLine: 'any', prev: '*', next: 'for'},
-          {blankLine: 'always', prev: 'import', next: '*'},
+          {blankLine: 'any', prev: 'import', next: '*'},
           {blankLine: 'any', prev: 'import', next: 'import'},
           {blankLine: 'any', prev: 'if', next: '*'},
           {blankLine: 'any', prev: 'function', next: '*'},
           {blankLine: 'any', prev: '*', next: 'function'},
-          {blankLine: 'always', prev: '*', next: 'export'},
-          {blankLine: 'always', prev: '*', next: 'cjs-export'},
-          {blankLine: 'always', prev: 'cjs-import', next: '*'},
+          {blankLine: 'any', prev: '*', next: 'export'},
+          {blankLine: 'any', prev: '*', next: 'cjs-export'},
+          {blankLine: 'any', prev: 'cjs-import', next: '*'},
           {blankLine: 'any', prev: 'cjs-import', next: 'cjs-import'}
-        ]
+        ],
+        'array-element-newline': 'off',
+        'array-bracket-newline': 'off'
       }
     }
   ]
