@@ -327,7 +327,8 @@ module.exports = {
           {blankLine: 'any', prev: 'cjs-import', next: 'cjs-import'}
         ],
         'array-element-newline': 'off',
-        'array-bracket-newline': 'off'
+        'array-bracket-newline': 'off',
+        'no-magic-numbers': 'off'
       }
     }
   ]
