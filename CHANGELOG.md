@@ -11,6 +11,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
+## [2.4.0] - 2018-05-05
+### Changed
+* `no-magic-numbers` - disabled for tests
+
 ## [2.3.0] - 2017-10-29
 ### Changed
 * `padding-line-between-statements` - multiple exports don't need new lines.
