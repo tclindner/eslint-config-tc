@@ -54,6 +54,7 @@ module.exports = {
       min: 1,
       max: 25
     }],
+    'implicit-arrow-linebreak': ['error', 'beside'],
     'indent': ['error', 2],
     'line-comment-position': ['error', {position: 'above'}],
     'lines-between-class-members': ['error', 'always'],

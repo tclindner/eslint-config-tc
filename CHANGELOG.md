@@ -16,6 +16,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 * Disabled `id-length`, `newline-after-var`, and `no-process-env` for tests.
 * Added `**/tests-*.js` as a test override pattern.
 
+Added one new rule from ESLint v4.12.0.
+* [implicit-arrow-linebreak](http://eslint.org/docs/rules/implicit-arrow-linebreak)
+
 ### Changed
 *
 
