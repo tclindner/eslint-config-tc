@@ -11,6 +11,17 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
+## [3.0.0] - 2018-05-12
+### Added
+* Disabled `id-length`, `newline-after-var`, and `no-process-env` for tests.
+* Added `**/tests-*.js` as a test override pattern.
+
+### Changed
+*
+
+### Removed
+* Dropped Node 4 and 5 support
+
 ## [2.4.0] - 2018-05-05
 ### Changed
 * `no-magic-numbers` - disabled for tests
