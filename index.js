@@ -294,7 +294,7 @@ module.exports = {
     'valid-typeof': ['error', {requireStringLiterals: true}],
     'wrap-iife': ['error', 'inside'],
     'wrap-regex': 'error',
-    'yoda': 'error',
+    'yoda': 'error'
   },
   overrides: [
     {
