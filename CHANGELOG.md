@@ -19,9 +19,6 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 Added one new rule from ESLint v4.12.0.
 * [implicit-arrow-linebreak](http://eslint.org/docs/rules/implicit-arrow-linebreak)
 
-### Changed
-*
-
 ### Removed
 * Dropped Node 4 and 5 support
 
