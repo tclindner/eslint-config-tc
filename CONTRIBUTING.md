@@ -23,16 +23,9 @@ This installs dependencies from `package.json`.
 
 ### JavaScript
 
-eslint-config-tc utilizes both ESLint and JSCS to enforce JavaScript standards. Please see the `.eslintrc.json` file for ESLint config and `.jscsrc` for JSCS config.
+eslint-config-tc utilizes ESLint to enforce JavaScript standards. Please see the `.eslintrc.json` file for more information.
 
 * [eslint](https://github.com/eslint/eslint)
-* [jscs](https://github.com/jscs-dev/node-jscs)
-
-#### JSON
-
-eslint-config-tc utilizes JSON Lint to ensure JSON files are valid.
-
-* [jsonlint](https://github.com/zaach/jsonlint)
 
 #### package.json
 
