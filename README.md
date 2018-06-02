@@ -1,6 +1,6 @@
 # eslint-config-tc
 
-> ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html) for TC's projects
+> ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html) for JavaScript projects
 
 
 [![license](https://img.shields.io/github/license/tclindner/eslint-config-tc.svg?maxAge=2592000&style=flat-square)](https://github.com/tclindner/eslint-config-tc/blob/master/LICENSE)
