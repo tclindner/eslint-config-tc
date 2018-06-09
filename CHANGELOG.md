@@ -11,6 +11,21 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
+## [3.1.0] - 2018-06-09
+### Added
+* Added `max-lines` to test overrides.
+
+### Changed
+* Updated `array-bracket-newline` to `consistent`
+* Updated `array-element-newline` to `multiline`
+* Updated `object-curly-newline` for `ObjectExpression` to `consistent`
+
+### Removed
+* `no-magic-numbers`
+
+Added one new rule from ESLint v4.12.0.
+* [implicit-arrow-linebreak](http://eslint.org/docs/rules/implicit-arrow-linebreak)
+
 ## [3.0.0] - 2018-05-12
 ### Added
 * Disabled `id-length`, `newline-after-var`, and `no-process-env` for tests.
