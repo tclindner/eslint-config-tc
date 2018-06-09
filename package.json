@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-tc",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "ESLint shareable config for JavaScript projects",
   "keywords": [
     "eslintconfig",
@@ -33,9 +33,9 @@
     "eslint": "^4.19.1",
     "eslint-formatter-pretty": "^1.3.0",
     "is-plain-obj": "^1.1.0",
-    "mocha": "^5.1.1",
-    "npm-package-json-lint": "^3.0.0",
-    "npm-package-json-lint-config-tc": "^2.0.0",
+    "mocha": "^5.2.0",
+    "npm-package-json-lint": "^3.1.0",
+    "npm-package-json-lint-config-tc": "^2.1.0",
     "temp-write": "^3.4.0"
   },
   "peerDependencies": {

@@ -13,10 +13,10 @@ module.exports = {
   },
   rules: {
     'accessor-pairs': 'error',
-    'array-bracket-newline': ['error', {multiline: true, minItems: 3}],
+    'array-bracket-newline': ['error', 'consistent'],
     'array-bracket-spacing': ['error', 'never'],
     'array-callback-return': 'error',
-    'array-element-newline': ['error', {minItems: 3}],
+    'array-element-newline': ['error', {multiline: true}],
     'arrow-body-style': ['error', 'as-needed'],
     'arrow-parens': ['error', 'always'],
     'arrow-spacing': ['error', {
@@ -147,7 +147,6 @@ module.exports = {
     'no-lone-blocks': 'error',
     'no-lonely-if': 'error',
     'no-loop-func': 'error',
-    'no-magic-numbers': ['error', {ignoreArrayIndexes: true}],
     'no-mixed-operators': ['error', {
       groups: [
         ['+', '-', '*', '/', '%', '**'],
@@ -224,7 +223,7 @@ module.exports = {
     'no-whitespace-before-property': 'error',
     'no-with': 'error',
     'object-curly-newline': ['error', {
-      ObjectExpression: {minProperties: 0, multiline: true},
+      ObjectExpression: {consistent: true},
       ObjectPattern: 'never'
     }],
     'object-curly-spacing': ['error', 'never'],
@@ -308,10 +307,10 @@ module.exports = {
         'array-bracket-newline': 'off',
         'array-element-newline': 'off',
         'id-length': 'off',
+        'max-lines': 'off',
         'max-nested-callbacks': 'off',
         'max-statements': 'off',
         'newline-after-var': 'off',
-        'no-magic-numbers': 'off',
         'no-process-env': 'off',
         'no-unused-expressions': 'off',
         'no-unused-vars': 'off',
