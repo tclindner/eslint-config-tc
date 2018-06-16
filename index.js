@@ -16,7 +16,6 @@ module.exports = {
     'array-bracket-newline': ['error', 'consistent'],
     'array-bracket-spacing': ['error', 'never'],
     'array-callback-return': 'error',
-    'array-element-newline': ['error', {multiline: true}],
     'arrow-body-style': ['error', 'as-needed'],
     'arrow-parens': ['error', 'always'],
     'arrow-spacing': ['error', {
@@ -305,7 +304,6 @@ module.exports = {
       env: {mocha: true},
       rules: {
         'array-bracket-newline': 'off',
-        'array-element-newline': 'off',
         'id-length': 'off',
         'max-lines': 'off',
         'max-nested-callbacks': 'off',
