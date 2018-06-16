@@ -11,6 +11,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
+## [3.2.0] - 2018-06-16
+### Removed
+* `array-element-newline`
+
 ## [3.1.0] - 2018-06-09
 ### Added
 * Added `max-lines` to test overrides.
