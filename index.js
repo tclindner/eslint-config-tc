@@ -17,6 +17,7 @@ module.exports = {
     'array-bracket-spacing': ['error', 'never'],
     'array-callback-return': 'error',
     'arrow-body-style': ['error', 'as-needed'],
+    'array-element-newline': ['error', 'consistent'],
     'arrow-parens': ['error', 'always'],
     'arrow-spacing': ['error', {
       before: true,
@@ -76,12 +77,14 @@ module.exports = {
       beforeBlockComment: true,
       beforeLineComment: true
     }],
+    'max-classes-per-file': 'error',
     'max-depth': ['error', 4],
     'max-lines': ['error', {
       max: 300,
       skipComments: true,
       skipBlankLines: true
     }],
+    'max-lines-per-function': 'error',
     'max-nested-callbacks': ['error', 4],
     'max-params': ['error', 4],
     'max-statements': ['error', 12],
@@ -304,8 +307,10 @@ module.exports = {
       env: {mocha: true},
       rules: {
         'array-bracket-newline': 'off',
+        'array-element-newline': 'off',
         'id-length': 'off',
         'max-lines': 'off',
+        'max-lines-per-function': 'off',
         'max-nested-callbacks': 'off',
         'max-statements': 'off',
         'newline-after-var': 'off',
