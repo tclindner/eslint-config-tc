@@ -43,7 +43,7 @@ describe('eslint config tests', () => {
       error.ruleId.should.equal('no-console');
       error.line.should.equal(expectedErrorLineNum);
       error.column.should.equal(expectedErrorColumnNum);
-      error.source.should.equal('console.log("doh, I used the wrong quotes");');
+      error.message.should.equal('Unexpected console statement.');
     });
   });
 });

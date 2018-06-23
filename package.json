@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-tc",
-  "version": "3.2.0",
+  "version": "4.0.0",
   "description": "ESLint shareable config for JavaScript projects",
   "keywords": [
     "eslintconfig",
@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "chai": "^4.1.2",
-    "eslint": "^4.19.1",
+    "eslint": "^5.0.0",
     "eslint-formatter-pretty": "^1.3.0",
     "is-plain-obj": "^1.1.0",
     "mocha": "^5.2.0",
@@ -39,7 +39,7 @@
     "temp-write": "^3.4.0"
   },
   "peerDependencies": {
-    "eslint": "^4.19.1"
+    "eslint": "^5.0.0"
   },
   "engines": {
     "node": ">=6.0.0",
