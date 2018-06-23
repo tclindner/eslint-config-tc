@@ -17,7 +17,7 @@ Added two new rules from ESLint v5.0.0.
 * [max-classes-per-file](https://eslint.org/docs/rules/max-classes-per-file) - Using default of one class per file.
 * [max-lines-per-function](https://eslint.org/docs/rules/max-lines-per-function) - Using defaults. (Ignored for test files.)
 
-Added older rules based on new options in ESLint v5.0.0
+Added older rule based on new options in ESLint v5.0.0
 * [array-element-newline](https://eslint.org/docs/rules/array-element-newline) - Set to `consistent`, which requires consistent usage of linebreaks between array elements. (Ignored for test files.)
 
 ## [3.2.0] - 2018-06-16
