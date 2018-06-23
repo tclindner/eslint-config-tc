@@ -39,7 +39,8 @@ describe('eslint config tests', () => {
       const expectedErrorColumnNum = 1;
       const errors = lint(code, eslintConfig);
       const error = errors[0];
-
+console.log(errors);
+console.log(error);
       error.ruleId.should.equal('no-console');
       error.line.should.equal(expectedErrorLineNum);
       error.column.should.equal(expectedErrorColumnNum);
