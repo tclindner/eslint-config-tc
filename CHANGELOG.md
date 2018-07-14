@@ -11,6 +11,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
+## [4.1.0] - 2018-07-14
+### Removed
+* Removed deprecated ESLint rule, `no-catch-shadow`
+
 ## [4.0.0] - 2018-06-23
 ### Added
 Added two new rules from ESLint v5.0.0.
