@@ -267,6 +267,7 @@ module.exports = {
         ClassDeclaration: false
       }
     }],
+    'require-atomic-updates': 'error',
     'semi': ['error', 'always'],
     'semi-spacing': ['error', {
       before: false,
