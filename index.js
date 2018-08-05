@@ -93,6 +93,7 @@ module.exports = {
     'new-parens': 'error',
     'newline-per-chained-call': ['error', {ignoreChainWithDepth: 4}],
     'no-array-constructor': 'error',
+    'no-async-promise-executor': 'error',
     'no-await-in-loop': 'error',
     'no-bitwise': 'error',
     'no-buffer-constructor': 'error',
@@ -267,6 +268,7 @@ module.exports = {
         ClassDeclaration: false
       }
     }],
+    'require-atomic-updates': 'error',
     'semi': ['error', 'always'],
     'semi-spacing': ['error', {
       before: false,
