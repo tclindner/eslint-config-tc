@@ -1,5 +1,3 @@
-'use strict';
-
 const chai = require('chai');
 const isPlainObj = require('is-plain-obj');
 const eslintConfig = require('../index.js');

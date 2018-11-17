@@ -10,7 +10,7 @@ const style = require.resolve('./rules/style');
 const variables = require.resolve('./rules/variables');
 
 module.exports = {
-  extends: [
+  'extends': [
     'eslint-config-airbnb-base',
     bestPractices,
     errors,
@@ -19,17 +19,17 @@ module.exports = {
     style,
     variables
   ],
-  parserOptions: {
+  'parserOptions': {
     ecmaVersion: 2018,
     sourceType: 'module'
   },
-  env: {
+  'env': {
     node: true
   },
-  rules: {
+  'rules': {
     strict: 'error'
   },
-  overrides: [
+  'overrides': [
     {
       files: [
         '**/*.spec.js',
