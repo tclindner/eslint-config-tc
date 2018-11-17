@@ -1,5 +1,3 @@
-'use strict';
-
 const eslint = require('eslint');
 const tempWrite = require('temp-write');
 

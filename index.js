@@ -1,311 +1,43 @@
-'use strict';
+/* eslint id-length: 'off', array-bracket-newline: 'off', array-element-newline: 'off' */
 
-/* eslint id-length: 'off', max-lines: 'off', array-bracket-newline: 'off', array-element-newline: 'off' */
+const bestPractices = require.resolve('./rules/best-practices');
+const errors = require.resolve('./rules/errors');
+const es6 = require.resolve('./rules/es6');
+const node = require.resolve('./rules/node');
+const style = require.resolve('./rules/style');
+const variables = require.resolve('./rules/variables');
 
 module.exports = {
-  parserOptions: {
-    ecmaVersion: 6,
+  'extends': [
+    'eslint-config-airbnb-base',
+    bestPractices,
+    errors,
+    es6,
+    node,
+    style,
+    variables
+  ],
+  'parserOptions': {
+    ecmaVersion: 2018,
     sourceType: 'module'
   },
-  env: {
-    node: true,
-    es6: true
+  'env': {
+    node: true
   },
-  rules: {
-    'accessor-pairs': 'error',
-    'array-bracket-newline': ['error', 'consistent'],
-    'array-bracket-spacing': ['error', 'never'],
-    'array-callback-return': 'error',
-    'arrow-body-style': ['error', 'as-needed'],
-    'array-element-newline': ['error', 'consistent'],
-    'arrow-parens': ['error', 'always'],
-    'arrow-spacing': ['error', {
-      before: true,
-      after: true
-    }],
-    'block-scoped-var': 'error',
-    'brace-style': 'error',
-    'callback-return': 'error',
-    'camelcase': 'error',
-    'class-methods-use-this': 'error',
-    'comma-dangle': ['error', 'never'],
-    'comma-spacing': ['error', {
-      before: false,
-      after: true
-    }],
-    'comma-style': ['error', 'last'],
-    'complexity': 'error',
-    'computed-property-spacing': ['error', 'never'],
-    'consistent-return': 'error',
-    'constructor-super': 'error',
-    'curly': 'error',
-    'default-case': 'error',
-    'dot-location': ['error', 'property'],
-    'dot-notation': ['error', {allowKeywords: true}],
-    'eol-last': 'error',
-    'eqeqeq': 'error',
-    'for-direction': 'error',
-    'function-paren-newline': ['error', 'never'],
-    'func-call-spacing': ['error', 'never'],
-    'func-style': ['error', 'expression'],
-    'getter-return': 'error',
-    'handle-callback-err': 'error',
-    'id-length': ['error', {
-      min: 1,
-      max: 25
-    }],
-    'implicit-arrow-linebreak': ['error', 'beside'],
-    'indent': ['error', 2],
-    'line-comment-position': ['error', {position: 'above'}],
-    'lines-between-class-members': ['error', 'always'],
-    'jsx-quotes': ['error', 'prefer-double'],
-    'key-spacing': ['error', {
-      beforeColon: false,
-      afterColon: true
-    }],
-    'keyword-spacing': 'error',
-    'linebreak-style': ['error', 'unix'],
-    'lines-around-comment': ['error', {
-      allowArrayStart: false,
-      allowArrayEnd: false,
-      allowBlockStart: true,
-      allowBlockEnd: false,
-      allowObjectStart: false,
-      allowObjectEnd: false,
-      afterBlockComment: false,
-      afterLineComment: false,
-      beforeBlockComment: true,
-      beforeLineComment: true
-    }],
-    'max-classes-per-file': 'error',
-    'max-depth': ['error', 4],
-    'max-lines': ['error', {
-      max: 300,
-      skipComments: true,
-      skipBlankLines: true
-    }],
-    'max-lines-per-function': 'error',
-    'max-nested-callbacks': ['error', 4],
-    'max-params': ['error', 4],
-    'max-statements': ['error', 12],
-    'max-statements-per-line': ['error', {max: 1}],
-    'new-cap': 'error',
-    'new-parens': 'error',
-    'newline-per-chained-call': ['error', {ignoreChainWithDepth: 4}],
-    'no-array-constructor': 'error',
-    'no-async-promise-executor': 'error',
-    'no-await-in-loop': 'error',
-    'no-bitwise': 'error',
-    'no-buffer-constructor': 'error',
-    'no-caller': 'error',
-    'no-case-declarations': 'error',
-    'no-class-assign': 'error',
-    'no-compare-neg-zero': 'error',
-    'no-cond-assign': ['error', 'always'],
-    'no-confusing-arrow': ['error', {allowParens: true}],
-    'no-console': 'warn',
-    'no-const-assign': 'error',
-    'no-constant-condition': 'error',
-    'no-continue': 'error',
-    'no-debugger': 'error',
-    'no-delete-var': 'error',
-    'no-div-regex': 'error',
-    'no-dupe-class-members': 'error',
-    'no-dupe-args': 'error',
-    'no-dupe-keys': 'error',
-    'no-duplicate-case': 'error',
-    'no-duplicate-imports': 'error',
-    'no-else-return': 'error',
-    'no-empty': 'error',
-    'no-empty-character-class': 'error',
-    'no-empty-function': 'error',
-    'no-empty-pattern': 'error',
-    'no-ex-assign': 'error',
-    'no-extend-native': 'error',
-    'no-extra-bind': 'error',
-    'no-extra-boolean-cast': 'error',
-    'no-extra-label': 'error',
-    'no-extra-parens': ['error', 'all', {
-      conditionalAssign: true,
-      nestedBinaryExpressions: false,
-      returnAssign: false
-    }],
-    'no-extra-semi': 'error',
-    'no-eq-null': 'error',
-    'no-eval': 'error',
-    'no-fallthrough': 'error',
-    'no-floating-decimal': 'error',
-    'no-func-assign': 'error',
-    'no-global-assign': 'error',
-    'no-implicit-coercion': 'error',
-    'no-implicit-globals': 'error',
-    'no-implied-eval': 'error',
-    'no-inline-comments': 'error',
-    'no-invalid-regexp': ['error', {allowConstructorFlags: ['u', 'y']}],
-    'no-irregular-whitespace': 'error',
-    'no-iterator': 'error',
-    'no-label-var': 'error',
-    'no-labels': 'error',
-    'no-lone-blocks': 'error',
-    'no-lonely-if': 'error',
-    'no-loop-func': 'error',
-    'no-mixed-operators': ['error', {
-      groups: [
-        ['+', '-', '*', '/', '%', '**'],
-        ['&', '|', '^', '~', '<<', '>>', '>>>'],
-        ['==', '!=', '===', '!==', '>', '>=', '<', '<='],
-        ['&&', '||'],
-        ['in', 'instanceof']
-      ],
-      allowSamePrecedence: true
-    }],
-    'no-mixed-requires': 'error',
-    'no-mixed-spaces-and-tabs': 'error',
-    'no-multi-assign': 'error',
-    'no-multi-spaces': 'error',
-    'no-multi-str': 'error',
-    'no-multiple-empty-lines': ['error', {
-      max: 2,
-      maxEOF: 1
-    }],
-    'no-negated-condition': 'error',
-    'no-nested-ternary': 'error',
-    'no-new': 'error',
-    'no-new-func': 'error',
-    'no-new-object': 'error',
-    'no-new-require': 'error',
-    'no-new-symbol': 'error',
-    'no-new-wrappers': 'error',
-    'no-obj-calls': 'error',
-    'no-octal': 'error',
-    'no-octal-escape': 'error',
-    'no-param-reassign': 'error',
-    'no-path-concat': 'error',
-    'no-plusplus': 'error',
-    'no-process-env': 'error',
-    'no-process-exit': 'error',
-    'no-proto': 'error',
-    'no-redeclare': 'error',
-    'no-regex-spaces': 'error',
-    'no-return-assign': 'error',
-    'no-return-await': 'error',
-    'no-script-url': 'error',
-    'no-self-assign': 'error',
-    'no-self-compare': 'error',
-    'no-sequences': 'error',
-    'no-shadow': 'error',
-    'no-shadow-restricted-names': 'error',
-    'no-sparse-arrays': 'error',
-    'no-tabs': 'error',
-    'no-template-curly-in-string': 'error',
-    'no-this-before-super': 'error',
-    'no-throw-literal': 'error',
-    'no-trailing-spaces': 'error',
-    'no-undef': 'error',
-    'no-undefined': 'error',
-    'no-unexpected-multiline': 'error',
-    'no-unmodified-loop-condition': 'error',
-    'no-unneeded-ternary': 'error',
-    'no-unreachable': 'error',
-    'no-unused-expressions': 'error',
-    'no-unsafe-finally': 'error',
-    'no-unused-labels': 'error',
-    'no-unsafe-negation': 'error',
-    'no-unused-vars': ['error', {vars: 'local', args: 'after-used', ignoreRestSiblings: true}],
-    'no-use-before-define': 'error',
-    'no-useless-call': 'error',
-    'no-useless-concat': 'error',
-    'no-useless-constructor': 'error',
-    'no-useless-escape': 'error',
-    'no-useless-rename': 'error',
-    'no-useless-return': 'error',
-    'no-var': 'error',
-    'no-void': 'error',
-    'no-warning-comments': 'error',
-    'no-whitespace-before-property': 'error',
-    'no-with': 'error',
-    'object-curly-newline': ['error', {
-      ObjectExpression: {consistent: true},
-      ObjectPattern: 'never'
-    }],
-    'object-curly-spacing': ['error', 'never'],
-    'object-property-newline': ['error', {allowMultiplePropertiesPerLine: true}],
-    'one-var': ['error', 'never'],
-    'operator-assignment': ['error', 'always'],
-    'padded-blocks': ['error', {classes: 'always'}],
-    'padding-line-between-statements': [
-      'error',
-      {blankLine: 'always', prev: '*', next: 'return'},
-      {blankLine: 'always', prev: ['const', 'let', 'var'], next: '*'},
-      {blankLine: 'any', prev: ['const', 'let', 'var'], next: ['const', 'let', 'var']},
-      {blankLine: 'always', prev: 'directive', next: '*'},
-      {blankLine: 'always', prev: ['for', 'do', 'while'], next: '*'},
-      {blankLine: 'always', prev: '*', next: 'for'},
-      {blankLine: 'always', prev: 'import', next: '*'},
-      {blankLine: 'any', prev: 'import', next: 'import'},
-      {blankLine: 'always', prev: 'if', next: '*'},
-      {blankLine: 'always', prev: 'function', next: '*'},
-      {blankLine: 'always', prev: '*', next: 'function'},
-      {blankLine: 'always', prev: '*', next: 'export'},
-      {blankLine: 'always', prev: '*', next: 'cjs-export'},
-      {blankLine: 'any', prev: 'cjs-export', next: 'cjs-export'},
-      {blankLine: 'any', prev: 'cjs-import', next: '*'},
-      {blankLine: 'any', prev: 'cjs-import', next: 'cjs-import'}
-    ],
-    'prefer-const': 'error',
-    'prefer-promise-reject-errors': 'error',
-    'prefer-rest-params': 'error',
-    'prefer-template': 'error',
-    'quote-props': ['error', 'consistent-as-needed', {keywords: true}],
-    'quotes': ['error', 'single', {avoidEscape: true}],
-    'radix': 'error',
-    'rest-spread-spacing': ['error', 'never'],
-    'require-await': 'error',
-    'require-jsdoc': ['error', {
-      require: {
-        FunctionDeclaration: true,
-        MethodDefinition: true,
-        ClassDeclaration: false
-      }
-    }],
-    'require-atomic-updates': 'error',
-    'semi': ['error', 'always'],
-    'semi-spacing': ['error', {
-      before: false,
-      after: false
-    }],
-    'semi-style': ['error', 'last'],
-    'sort-vars': 'error',
-    'space-before-blocks': ['error', {
-      functions: 'always',
-      keywords: 'always',
-      classes: 'always'
-    }],
-    'space-before-function-paren': ['error', 'never'],
-    'space-in-parens': ['error', 'never'],
-    'space-unary-ops': [2, {
-      words: true,
-      nonwords: false
-    }],
-    'spaced-comment': ['error', 'always'],
-    'switch-colon-spacing': 'error',
-    'symbol-description': 'error',
-    'template-curly-spacing': 'error',
-    'use-isnan': 'error',
-    'valid-jsdoc': 'error',
-    'valid-typeof': ['error', {requireStringLiterals: true}],
-    'wrap-iife': ['error', 'inside'],
-    'wrap-regex': 'error',
-    'yoda': 'error'
+  'rules': {
+    strict: 'error'
   },
-  overrides: [
+  'overrides': [
     {
       files: [
         '**/*.spec.js',
         '**/*.test.js',
         '**/tests-*.js'
       ],
-      env: {mocha: true},
+      env: {
+        jest: true,
+        mocha: true
+      },
       rules: {
         'array-bracket-newline': 'off',
         'array-element-newline': 'off',
