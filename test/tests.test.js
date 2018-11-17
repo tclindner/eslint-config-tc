@@ -32,8 +32,8 @@ describe('eslint config tests', () => {
 
   context('run eslint and make sure it runs', () => {
     it('eslint should run without failing', () => {
-      const code = '\'use strict\';\n\nconsole.log("doh, I used the wrong quotes");\n';
-      const expectedErrorLineNum = 3;
+      const code = 'console.log("doh, I used the wrong quotes");\n';
+      const expectedErrorLineNum = 1;
       const expectedErrorColumnNum = 1;
       const errors = lint(code, eslintConfig);
       const error = errors[0];
