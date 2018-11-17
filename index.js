@@ -5,12 +5,11 @@
 module.exports = {
   extend: 'eslint-config-airbnb-base',
   parserOptions: {
-    ecmaVersion: 6,
+    ecmaVersion: 2018,
     sourceType: 'module'
   },
   env: {
-    node: true,
-    es6: true
+    node: true
   },
   rules: {
     'accessor-pairs': 'error',
