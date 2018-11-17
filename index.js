@@ -1,5 +1,3 @@
-'use strict';
-
 /* eslint id-length: 'off', array-bracket-newline: 'off', array-element-newline: 'off' */
 
 const bestPractices = require.resolve('./rules/best-practices');
