@@ -2,12 +2,12 @@
 
 /* eslint id-length: 'off', array-bracket-newline: 'off', array-element-newline: 'off' */
 
-const bestPractices = require('./rules/best-practices');
-const errors = require('./rules/errors');
-const es6 = require('./rules/es6');
-const node = require('./rules/node');
-const style = require('./rules/style');
-const variables = require('./rules/variables');
+const bestPractices = require.resolve('./rules/best-practices');
+const errors = require.resolve('./rules/errors');
+const es6 = require.resolve('./rules/es6');
+const node = require.resolve('./rules/node');
+const style = require.resolve('./rules/style');
+const variables = require.resolve('./rules/variables');
 
 module.exports = {
   extend: [
