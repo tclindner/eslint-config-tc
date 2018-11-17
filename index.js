@@ -10,7 +10,7 @@ const style = require.resolve('./rules/style');
 const variables = require.resolve('./rules/variables');
 
 module.exports = {
-  extend: [
+  extends: [
     'eslint-config-airbnb-base',
     bestPractices,
     errors,
