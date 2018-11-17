@@ -11,6 +11,66 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
+## [5.0.0] - 2018-11-17
+### Added
+* [no-control-regex](https://eslint.org/docs/rules/no-control-regex)
+* [no-inner-declarations](https://eslint.org/docs/rules/no-inner-declarations)
+* [guard-for-in](https://eslint.org/docs/rules/guard-for-in)
+* [vars-on-top](https://eslint.org/docs/rules/vars-on-top)
+* [no-undef-init](https://eslint.org/docs/rules/no-undef-init)
+* [global-require](https://eslint.org/docs/rules/global-require)
+* [no-restricted-properties](https://eslint.org/docs/rules/no-restricted-properties)
+* [lines-around-directive](https://eslint.org/docs/rules/lines-around-directive)
+* [no-restricted-syntax](https://eslint.org/docs/rules/no-restricted-syntax) - ForInStatement, ForOfStatement, LabeledStatement, and WithStatement
+* [one-var-declaration-per-line](https://eslint.org/docs/rules/one-var-declaration-per-line)
+* [unicode-bom](https://eslint.org/docs/rules/unicode-bom)
+* [generator-star-spacing](https://eslint.org/docs/rules/generator-star-spacing)
+* [no-useless-computed-key](https://eslint.org/docs/rules/no-useless-computed-key)
+* [object-shorthand](https://eslint.org/docs/rules/object-shorthand)
+* [prefer-arrow-callback](https://eslint.org/docs/rules/prefer-arrow-callback)
+* [prefer-numeric-literals](https://eslint.org/docs/rules/prefer-numeric-literals)
+* [prefer-spread](https://eslint.org/docs/rules/prefer-spread)
+* [require-yield](https://eslint.org/docs/rules/require-yield)
+* [yield-star-spacing](https://eslint.org/docs/rules/yield-star-spacing)
+
+### Changed
+* [no-extra-parens](https://eslint.org/docs/rules/no-extra-parens) - Added ignoreJSX: 'all', // delegate to eslint-plugin-react, enforceForArrowConditionals: false
+* [no-invalid-regexp](https://eslint.org/docs/rules/no-invalid-regexp) - Removed allowConstructorFlags: ['u', 'y']
+* [wrap-iife](https://eslint.org/docs/rules/wrap-iife) - Changed from 'inside' to 'outside', { functionPrototypeMethods: false }
+* [no-unused-vars](https://eslint.org/docs/rules/no-unused-vars) - Changed vars from 'local' to 'all'
+* [indent](https://eslint.org/docs/rules/indent) - Changed for always 2 to
+    SwitchCase: 1,
+    VariableDeclarator: 1,
+    outerIIFEBody: 1,
+    // MemberExpression: null,
+    FunctionDeclaration: {
+      parameters: 1,
+      body: 1
+    },
+    FunctionExpression: {
+      parameters: 1,
+      body: 1
+    },
+    CallExpression: {
+      arguments: 1
+    },
+    ArrayExpression: 1,
+    ObjectExpression: 1,
+    ImportDeclaration: 1,
+    flatTernaryExpressions: false,
+    // list derived from https://github.com/benjamn/ast-types/blob/HEAD/def/jsx.js
+    ignoredNodes: ['JSXElement', 'JSXElement > *', 'JSXAttribute', 'JSXIdentifier', 'JSXNamespacedName', 'JSXMemberExpression', 'JSXSpreadAttribute', 'JSXExpressionContainer', 'JSXOpeningElement', 'JSXClosingElement', 'JSXText', 'JSXEmptyExpression', 'JSXSpreadChild'],
+    ignoreComments: false
+* [new-cap](https://eslint.org/docs/rules/new-cap)
+* [no-mixed-operators](https://eslint.org/docs/rules/no-mixed-operators): allowSamePrecedence from true to false
+
+### Removed
+* [no-process-env](https://eslint.org/docs/rules/no-process-env)
+* [no-process-exit](https://eslint.org/docs/rules/no-process-exit)
+* [max-lines](https://eslint.org/docs/rules/max-lines)
+* [no-async-promise-executor](https://eslint.org/docs/rules/no-async-promise-executor)
+* [require-await](https://eslint.org/docs/rules/require-await)
+
 ## [4.2.0] - 2018-08-05
 ### Added
 Added two new rules from ESLint v5.3.0.
