@@ -4,6 +4,7 @@ module.exports = {
     'brace-style': 'error',
     'camelcase': 'error',
     'comma-dangle': ['error', 'never'],
+    'func-names': 'off',
     'func-style': ['error', 'expression'],
     'function-paren-newline': ['error', 'never'],
     'id-length': ['error', {

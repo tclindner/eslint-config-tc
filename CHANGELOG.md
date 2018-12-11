@@ -11,6 +11,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
+## [5.1.0] - 2018-12-10
+### Removed
+* Disabled [func-names](https://eslint.org/docs/rules/func-names) rule.
+
 ## [5.0.0] - 2018-11-17
 ### Added
 * [no-control-regex](https://eslint.org/docs/rules/no-control-regex)
