@@ -29,7 +29,7 @@ module.exports = {
     'max-len': 'off',
     'max-lines-per-function': 'error',
     'max-nested-callbacks': ['error', 4],
-    'max-params': ['error', 4],
+    'max-params': ['error', 6],
     'max-statements': ['error', 12],
     'max-statements-per-line': ['error', {max: 1}],
     'new-cap': 'error',
