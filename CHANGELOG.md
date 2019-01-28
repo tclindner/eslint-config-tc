@@ -11,6 +11,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
+## [5.2.0] - 2019-01-27
+### Changed
+* Updated [max-params](https://eslint.org/docs/rules/max-params) rule to allow 6 params.
+
 ## [5.1.0] - 2018-12-10
 ### Removed
 * Disabled [func-names](https://eslint.org/docs/rules/func-names) rule.
