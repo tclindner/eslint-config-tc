@@ -1,47 +1,49 @@
-const chai = require('chai');
+const eslint = require('eslint');
 const isPlainObj = require('is-plain-obj');
 const eslintConfig = require('../index.js');
-const lint = require('./helper/testHelper.js');
-
-const should = chai.should();
 
 describe('eslint config tests', () => {
-  context('eslint object', () => {
-    it('should be an object', () => {
-      isPlainObj(eslintConfig).should.be.true;
+  describe('eslint object', () => {
+    test('should be an object', () => {
+      expect(isPlainObj(eslintConfig)).toBeTruthy();
     });
   });
 
-  context('parserOptions', () => {
-    it('should be an object', () => {
-      isPlainObj(eslintConfig.parserOptions).should.be.true;
+  describe('parserOptions', () => {
+    test('should be an object', () => {
+      expect(isPlainObj(eslintConfig.parserOptions)).toBeTruthy();
     });
   });
 
-  context('env', () => {
-    it('should be an array', () => {
-      isPlainObj(eslintConfig.env).should.be.true;
+  describe('env', () => {
+    test('should be an array', () => {
+      expect(isPlainObj(eslintConfig.env)).toBeTruthy();
     });
   });
 
-  context('rules', () => {
-    it('should be an object', () => {
-      isPlainObj(eslintConfig.rules).should.be.true;
+  describe('rules', () => {
+    test('should be an object', () => {
+      expect(isPlainObj(eslintConfig.rules)).toBeTruthy();
     });
   });
 
-  context('run eslint and make sure it runs', () => {
-    it('eslint should run without failing', () => {
+  describe('run eslint and make sure it runs', () => {
+    test('eslint should run without failing', () => {
       const code = 'console.log("doh, I used the wrong quotes");\n';
       const expectedErrorLineNum = 1;
       const expectedErrorColumnNum = 1;
-      const errors = lint(code, eslintConfig);
+      const linter = new eslint.CLIEngine({
+        useEslintrc: false,
+        baseConfig: eslintConfig
+      });
+
+      const errors = linter.executeOnText(code).results[0].messages;
       const error = errors[0];
 
-      error.ruleId.should.equal('no-console');
-      error.line.should.equal(expectedErrorLineNum);
-      error.column.should.equal(expectedErrorColumnNum);
-      error.message.should.equal('Unexpected console statement.');
+      expect(error.ruleId).toStrictEqual('no-console');
+      expect(error.line).toStrictEqual(expectedErrorLineNum);
+      expect(error.column).toStrictEqual(expectedErrorColumnNum);
+      expect(error.message).toStrictEqual('Unexpected console statement.');
     });
   });
 });
