@@ -28,8 +28,10 @@ First thing first, let's make sure you have the necessary pre-requisites.
 ### Command
 
 ```bash
-npm install eslint-config-tc eslint eslint-plugin-import --save-dev
+npm install eslint-config-tc eslint eslint-plugin-import eslint-plugin-prettier prettier --save-dev
 ```
+
+> eslint, eslint-plugin-import, eslint-plugin-prettier, and prettier are peer dependencies and must be installed.
 
 ## Usage
 

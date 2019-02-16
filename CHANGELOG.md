@@ -11,6 +11,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
+## [6.0.0] - 2019-02-16
+### Added
+* Prettier support via `eslint-plugin-prettier`. Three options have been configured. `endOfLine` is set to `lf`. `printWidth` is set to `124`. `singleQuote` is set to `true`.
+
+### Changed
+* Deferred rules covered by `eslint-config-prettier` to Prettier.
+
 ## [5.2.0] - 2019-01-27
 ### Changed
 * Updated [max-params](https://eslint.org/docs/rules/max-params) rule to allow 6 params.

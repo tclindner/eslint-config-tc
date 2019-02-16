@@ -1,39 +1,37 @@
-/* eslint id-length: 'off', array-bracket-newline: 'off', array-element-newline: 'off' */
-
 const bestPractices = require.resolve('./rules/best-practices');
 const errors = require.resolve('./rules/errors');
 const es6 = require.resolve('./rules/es6');
 const node = require.resolve('./rules/node');
 const style = require.resolve('./rules/style');
 const variables = require.resolve('./rules/variables');
+const prettier = require.resolve('./rules/prettier');
 
 module.exports = {
-  'extends': [
+  extends: [
     'eslint-config-airbnb-base',
+    'eslint-config-prettier',
     bestPractices,
     errors,
     es6,
     node,
     style,
-    variables
+    variables,
+    prettier
   ],
-  'parserOptions': {
+  plugins: ['prettier'],
+  parserOptions: {
     ecmaVersion: 2018,
     sourceType: 'module'
   },
-  'env': {
+  env: {
     node: true
   },
-  'rules': {
+  rules: {
     strict: 'error'
   },
-  'overrides': [
+  overrides: [
     {
-      files: [
-        '**/*.spec.js',
-        '**/*.test.js',
-        '**/tests-*.js'
-      ],
+      files: ['**/*.spec.js', '**/*.test.js', '**/tests-*.js'],
       env: {
         jest: true,
         mocha: true
