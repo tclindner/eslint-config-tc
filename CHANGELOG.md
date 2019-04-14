@@ -11,6 +11,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
+## [6.1.0] - 2019-04-14
+### Changed
+* Updated [id-length](https://eslint.org/docs/rules/id-length) max from 25 to 30.
+
 ## [6.0.0] - 2019-02-16
 ### Added
 * Prettier support via `eslint-plugin-prettier`. Three options have been configured. `endOfLine` is set to `lf`. `printWidth` is set to `124`. `singleQuote` is set to `true`.
