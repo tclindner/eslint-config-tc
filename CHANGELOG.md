@@ -11,6 +11,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
+## [6.2.0] - 2019-04-26
+### Changed
+* Updated [no-warning-comments](https://eslint.org/docs/rules/no-warning-comments) from `error` to `warn`.
+* Updated [max-statements](https://eslint.org/docs/rules/max-statements) from `12` to `15`.
+
 ## [6.1.0] - 2019-04-14
 ### Changed
 * Updated [id-length](https://eslint.org/docs/rules/id-length) max from 25 to 30.
