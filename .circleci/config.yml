@@ -55,15 +55,15 @@ workflows:
       - test-node8:
           requires:
             - build
-      - test-node9
+      - test-node9:
           requires:
             - build
-      - test-node10
+      - test-node10:
           requires:
             - build
-      - test-node11
+      - test-node11:
           requires:
             - build
-      - test-node12
+      - test-node12:
           requires:
             - build
