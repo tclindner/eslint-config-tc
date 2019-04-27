@@ -8,43 +8,43 @@ jobs:
       - run: npm install
       - run: npm run lint
       - persist_to_workspace:
-        root: ~/
-        paths:
-          - project
+          root: ~/
+          paths:
+            - project
   test-node8:
     docker:
       - image: circleci/node:8
     steps:
       - attach_workspace:
-        at: ~/
+          at: ~/
       - run: npm test
   test-node9:
     docker:
       - image: circleci/node:9
     steps:
       - attach_workspace:
-        at: ~/
+          at: ~/
       - run: npm test
   test-node10:
     docker:
       - image: circleci/node:10
     steps:
       - attach_workspace:
-        at: ~/
+          at: ~/
       - run: npm test
   test-node11:
     docker:
       - image: circleci/node:11
     steps:
       - attach_workspace:
-        at: ~/
+          at: ~/
       - run: npm test
   test-node12:
     docker:
       - image: circleci/node:12
     steps:
       - attach_workspace:
-        at: ~/
+          at: ~/
       - run: npm test
 
 workflows:
