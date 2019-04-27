@@ -53,17 +53,17 @@ workflows:
     jobs:
       - build
       - test-node8:
-        requires:
-          - build
+          requires:
+            - build
       - test-node9
-        requires:
-          - build
+          requires:
+            - build
       - test-node10
-        requires:
-          - build
+          requires:
+            - build
       - test-node11
-        requires:
-          - build
+          requires:
+            - build
       - test-node12
-        requires:
-          - build
+          requires:
+            - build
