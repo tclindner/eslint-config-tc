@@ -83,21 +83,39 @@ workflows:
   build-test-and-publish:
     jobs:
       - build
+          filters:
+            tags:
+              only: /.*/
       - test-node8:
           requires:
             - build
+          filters:
+            tags:
+              only: /.*/
       - test-node9:
           requires:
             - build
+          filters:
+            tags:
+              only: /.*/
       - test-node10:
           requires:
             - build
+          filters:
+            tags:
+              only: /.*/
       - test-node11:
           requires:
             - build
+          filters:
+            tags:
+              only: /.*/
       - test-node12:
           requires:
             - build
+          filters:
+            tags:
+              only: /.*/
       - publish-beta:
           requires:
             - test-node8
