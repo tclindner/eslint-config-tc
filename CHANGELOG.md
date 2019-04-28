@@ -11,6 +11,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
+## [6.3.0] - 2019-04-27
+### Removed
+Removed the following rules that are now covered with the same config in Airbnb.
+* [class-methods-use-this](https://eslint.org/docs/rules/class-methods-use-this)
+* [default-case](https://eslint.org/docs/rules/default-case)
+* [eqeqeq](https://eslint.org/docs/rules/eqeqeq)
+* [default-case](https://eslint.org/docs/rules/default-case)
+
 ## [6.2.0] - 2019-04-26
 ### Changed
 * Updated [no-warning-comments](https://eslint.org/docs/rules/no-warning-comments) from `error` to `warn`.
