@@ -128,13 +128,22 @@ workflows:
               only: /^v\d*\.\d*\.\d*-beta\.\d*$/
             branches:
               ignore: /.*/
-      - publish-stable:
+      - hold:
+          type: approval
           requires:
             - test-node8
             - test-node9
             - test-node10
             - test-node11
             - test-node12
+          filters:
+            tags:
+              only: /^v\d*\.\d*\.\d*$/
+            branches:
+              ignore: /.*/
+      - publish-stable:
+          requires:
+            - hold
           filters:
             tags:
               only: /^v\d*\.\d*\.\d*$/
