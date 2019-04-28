@@ -108,6 +108,8 @@ workflows:
           filters:
             tags:
               only: /^v\d*\.\d*\.\d*-beta\.\d*$/
+            branches:
+              ignore: /.*/
       - publish-stable:
           requires:
             - test-node8
