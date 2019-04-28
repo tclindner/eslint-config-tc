@@ -1,10 +1,7 @@
 module.exports = {
   rules: {
     'accessor-pairs': 'error',
-    'class-methods-use-this': 'error',
     complexity: 'error',
-    'default-case': 'error',
-    eqeqeq: 'error',
     'no-div-regex': 'error',
     'no-empty-function': 'error',
     'no-eq-null': 'error',
