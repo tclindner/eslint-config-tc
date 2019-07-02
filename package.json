@@ -45,7 +45,7 @@
   },
   "dependencies": {
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-config-prettier": "^4.2.0"
+    "eslint-config-prettier": "^6.0.0"
   },
   "peerDependencies": {
     "eslint": "^5.16.0",
