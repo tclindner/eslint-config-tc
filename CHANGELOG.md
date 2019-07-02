@@ -11,6 +11,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
+## [6.5.0] - 2019-07-02
+### Changed
+* Updated [max-statements](https://eslint.org/docs/rules/max-statements) from `15` to `25`.
+
+## [6.4.0] - 2019-04-27
+
+* N/A
+
 ## [6.3.0] - 2019-04-27
 ### Removed
 Removed the following rules that are now covered with the same config in Airbnb.
