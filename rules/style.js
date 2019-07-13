@@ -40,16 +40,6 @@ module.exports = {
       {blankLine: 'any', prev: 'cjs-import', next: '*'},
       {blankLine: 'any', prev: 'cjs-import', next: 'cjs-import'}
     ],
-    'require-jsdoc': [
-      'error',
-      {
-        require: {
-          FunctionDeclaration: true,
-          MethodDefinition: true,
-          ClassDeclaration: false
-        }
-      }
-    ],
     'sort-vars': 'error',
     'spaced-comment': ['error', 'always']
   }
