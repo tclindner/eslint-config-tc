@@ -40,7 +40,7 @@
     "is-plain-obj": "^2.0.0",
     "jest": "^24.8.0",
     "npm-package-json-lint": "^3.7.0",
-    "npm-package-json-lint-config-tc": "^2.1.0",
+    "npm-package-json-lint-config-tc": "^2.2.0",
     "prettier": "^1.18.2"
   },
   "dependencies": {
@@ -55,7 +55,7 @@
   },
   "engines": {
     "node": ">=8.0.0",
-    "npm": ">=5.0.0"
+    "npm": ">=6.0.0"
   },
   "license": "MIT"
 }
