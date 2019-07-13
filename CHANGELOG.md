@@ -10,6 +10,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 
 ### Removed
+* Dropped Node 6 and 7 support
+* `valid-jsdoc` and `require-jsdoc` since both have been removed from ESLint core to a plugin because of their complexity.
 
 ## [6.5.0] - 2019-07-02
 ### Changed
@@ -292,3 +294,4 @@ Added four new rules from ESLint v2.12.0.
 
 ## [1.0.0] - 2016-07-17
 - First release
+
