@@ -4,6 +4,29 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 ### Added
+* [`eslint-plugin-jest`](https://github.com/jest-community/eslint-plugin-jest) with the following rules:
+
+  * [`jest/no-alias-methods`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-alias-methods.md)
+  * [`jest/no-disabled-tests`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-disabled-tests.md)
+  * [`jest/no-focused-tests`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-focused-tests.md)
+  * [`jest/no-identical-title`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-identical-title.md)
+  * [`jest/no-jasmine-globals`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-jasmine-globals.md)
+  * [`jest/no-jest-import`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-jest-import.md)
+  * [`jest/no-test-prefixes`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-test-prefixes.md)
+  * [`jest/valid-describe`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/valid-describe.md)
+  * [`jest/valid-expect-in-promise`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/valid-expect-in-promise.md)
+  * [`jest/valid-expect`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/valid-expect.md)
+  * [`consistent-test-it`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/consistent-test-it.md)
+  * [`no-commented-out-tests`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-commented-out-tests.md)
+  * [`no-empty-title`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-empty-title.md)
+  * [`no-test-callback`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-test-callback.md)
+  * [`no-test-return-statement`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-test-return-statement.md)
+  * [`no-truthy-falsy`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-truthy-falsy.md)
+  * [`prefer-to-be-null`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-to-be-null.md)
+  * [`prefer-to-be-undefined`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-to-be-undefined.md)
+  * [`prefer-to-have-length`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-to-have-length.md)
+  * [`require-tothrow-message`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/require-tothrow-message.md)
+  * [`prefer-todo`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-todo.md)
 
 ### Changed
 

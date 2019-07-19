@@ -5,25 +5,25 @@ const eslintConfig = require('../index.js');
 describe('eslint config tests', () => {
   describe('eslint object', () => {
     test('should be an object', () => {
-      expect(isPlainObj(eslintConfig)).toBeTruthy();
+      expect(isPlainObj(eslintConfig)).toBe(true);
     });
   });
 
   describe('parserOptions', () => {
     test('should be an object', () => {
-      expect(isPlainObj(eslintConfig.parserOptions)).toBeTruthy();
+      expect(isPlainObj(eslintConfig.parserOptions)).toBe(true);
     });
   });
 
   describe('env', () => {
     test('should be an array', () => {
-      expect(isPlainObj(eslintConfig.env)).toBeTruthy();
+      expect(isPlainObj(eslintConfig.env)).toBe(true);
     });
   });
 
   describe('rules', () => {
     test('should be an object', () => {
-      expect(isPlainObj(eslintConfig.rules)).toBeTruthy();
+      expect(isPlainObj(eslintConfig.rules)).toBe(true);
     });
   });
 
