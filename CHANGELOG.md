@@ -4,6 +4,15 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 ### Added
+
+### Changed
+
+### Fixed
+
+### Removed
+
+## [7.0.0] - 2019-07-25
+### Added
 * [`eslint-plugin-jest`](https://github.com/jest-community/eslint-plugin-jest) with the following rules:
 
   * [`jest/no-alias-methods`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-alias-methods.md)
@@ -19,6 +28,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
   * [`consistent-test-it`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/consistent-test-it.md)
   * [`no-commented-out-tests`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-commented-out-tests.md)
   * [`no-empty-title`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-empty-title.md)
+  * [`no-large-snapshots`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-large-snapshots.md)
   * [`no-test-callback`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-test-callback.md)
   * [`no-test-return-statement`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-test-return-statement.md)
   * [`no-truthy-falsy`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-truthy-falsy.md)
@@ -27,6 +37,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
   * [`prefer-to-have-length`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-to-have-length.md)
   * [`require-tothrow-message`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/require-tothrow-message.md)
   * [`prefer-todo`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-todo.md)
+
 
 ### Changed
 

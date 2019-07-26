@@ -59,6 +59,7 @@ module.exports = {
         ],
         'jest/no-commented-out-tests': 'error',
         'jest/no-empty-title': 'error',
+        'jest/no-large-snapshots': 'error',
         'jest/no-test-callback': 'error',
         'jest/no-test-return-statement': 'error',
         'jest/no-truthy-falsy': 'error',
