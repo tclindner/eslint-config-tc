@@ -11,6 +11,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
+## [8.0.0] - 2019-08-10
+### Changed
+* Updated to ESLint 6.
+
 ## [7.0.0] - 2019-07-25
 ### Added
 * [`eslint-plugin-jest`](https://github.com/jest-community/eslint-plugin-jest) with the following rules:
@@ -37,11 +41,6 @@ This project adheres to [Semantic Versioning](http://semver.org/).
   * [`prefer-to-have-length`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-to-have-length.md)
   * [`require-tothrow-message`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/require-tothrow-message.md)
   * [`prefer-todo`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-todo.md)
-
-
-### Changed
-
-### Fixed
 
 ### Removed
 * Dropped Node 6 and 7 support
