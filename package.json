@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-tc",
-  "version": "7.0.0",
+  "version": "8.0.0",
   "description": "ESLint shareable config for JavaScript projects",
   "keywords": [
     "eslintconfig",
@@ -33,10 +33,10 @@
     "test": "jest"
   },
   "devDependencies": {
-    "eslint": "^5.16.0",
+    "eslint": "^6.1.0",
     "eslint-formatter-pretty": "^2.1.1",
-    "eslint-plugin-import": "^2.18.0",
-    "eslint-plugin-jest": "^22.7.2",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.15.0",
     "eslint-plugin-prettier": "^3.1.0",
     "is-plain-obj": "^2.0.0",
     "jest": "^24.8.0",
@@ -45,11 +45,11 @@
     "prettier": "^1.18.2"
   },
   "dependencies": {
-    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-prettier": "^6.0.0"
   },
   "peerDependencies": {
-    "eslint": "^5.16.0",
+    "eslint": "^6.1.0",
     "eslint-plugin-import": ">= 2",
     "eslint-plugin-jest": ">= 22",
     "eslint-plugin-prettier": ">= 3",
