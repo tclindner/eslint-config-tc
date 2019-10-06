@@ -11,6 +11,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
+## [8.1.0] - 2019-10-06
+### Changed
+* Updated [id-length](https://eslint.org/docs/rules/id-length) max from 30 to 40.
+
 ## [8.0.0] - 2019-08-10
 ### Changed
 * Updated to ESLint 6.

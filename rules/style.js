@@ -7,7 +7,7 @@ module.exports = {
       'error',
       {
         min: 1,
-        max: 30
+        max: 40
       }
     ],
     'line-comment-position': ['error', {position: 'above'}],
