@@ -11,6 +11,16 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
+## [9.0.0] - 2019-10-28
+### Added
+* [`jest/no-duplicate-hooks`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-duplicate-hooks.md)
+* [`jest/no-export`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-export.md)
+* [`jest/no-if`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-if.md)
+* [`jest/no-try-expect`](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-try-expect.md)
+
+### Changed
+* Bumped peer dep `eslint-plugin-jest` to v23.x.x. `eslint-plugin-jest` will also need to be bumped when upgrading.
+
 ## [8.2.0] - 2019-10-28
 ### Changed
 * Final release with support for `eslint-plugin-jest` v22.x.x.
