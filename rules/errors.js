@@ -1,7 +1,7 @@
 module.exports = {
   rules: {
     'no-constant-condition': 'error',
-    'no-prototype-builtins': 'off',
+    'no-prototype-builtins': 'error',
     'require-atomic-updates': 'error'
   }
 };
