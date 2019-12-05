@@ -49,6 +49,7 @@ module.exports = {
             withinDescribe: 'test'
           }
         ],
+        'jest/expect-expect': 'error',
         'jest/no-alias-methods': 'error',
         'jest/no-commented-out-tests': 'error',
         'jest/no-disabled-tests': 'error',
@@ -66,6 +67,8 @@ module.exports = {
         'jest/no-test-return-statement': 'error',
         'jest/no-truthy-falsy': 'error',
         'jest/no-try-expect': 'error',
+        'jest/prefer-called-with': 'error',
+        'jest/prefer-hooks-on-top': 'error',
         'jest/prefer-strict-equal': 'error',
         'jest/prefer-to-be-null': 'error',
         'jest/prefer-to-be-undefined': 'error',
@@ -73,6 +76,7 @@ module.exports = {
         'jest/prefer-to-have-length': 'error',
         'jest/prefer-todo': 'error',
         'jest/require-to-throw-message': 'error',
+        'jest/require-top-level-describe': 'error',
         'jest/valid-describe': 'error',
         'jest/valid-expect-in-promise': 'error',
         'jest/valid-expect': 'error',
