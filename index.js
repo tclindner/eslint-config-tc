@@ -10,6 +10,7 @@ module.exports = {
   extends: [
     'eslint-config-airbnb-base',
     'eslint-config-prettier',
+    'plugin:eslint-comments/recommended',
     bestPractices,
     errors,
     es6,
@@ -39,6 +40,7 @@ module.exports = {
       rules: {
         'array-bracket-newline': 'off',
         'array-element-newline': 'off',
+        'eslint-comments/no-unused-disable': 'error',
         'id-length': 'off',
         'jest/consistent-test-it': [
           'error',
