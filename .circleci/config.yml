@@ -17,42 +17,42 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/
-      - run: npm run test:ci
+      - run: npm test
   test-node9:
     docker:
       - image: circleci/node:9
     steps:
       - attach_workspace:
           at: ~/
-      - run: npm run test:ci
+      - run: npm test
   test-node10:
     docker:
       - image: circleci/node:10
     steps:
       - attach_workspace:
           at: ~/
-      - run: npm run test:ci
+      - run: npm test
   test-node11:
     docker:
       - image: circleci/node:11
     steps:
       - attach_workspace:
           at: ~/
-      - run: npm run test:ci
+      - run: npm test
   test-node12:
     docker:
       - image: circleci/node:12
     steps:
       - attach_workspace:
           at: ~/
-      - run: npm run test:ci
+      - run: npm test
   test-node13:
     docker:
       - image: circleci/node:13
     steps:
       - attach_workspace:
           at: ~/
-      - run: npm run test:ci
+      - run: npm test
   publish-beta:
     docker:
       - image: circleci/node:10
