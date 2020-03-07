@@ -40,6 +40,7 @@ module.exports = {
       {blankLine: 'any', prev: 'cjs-import', next: '*'},
       {blankLine: 'any', prev: 'cjs-import', next: 'cjs-import'}
     ],
+    'prefer-exponentiation-operator': 'error',
     'sort-vars': 'error',
     'spaced-comment': ['error', 'always']
   }
