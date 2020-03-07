@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-tc",
-  "version": "10.0.1",
+  "version": "11.0.0",
   "description": "ESLint shareable config for JavaScript projects",
   "keywords": [
     "eslintconfig",
@@ -58,7 +58,7 @@
     "prettier": "^1.0.0"
   },
   "engines": {
-    "node": ">=8.0.0",
+    "node": ">=10.0.0",
     "npm": ">=6.0.0"
   },
   "license": "MIT"
