@@ -2,6 +2,7 @@ module.exports = {
   rules: {
     'accessor-pairs': 'error',
     complexity: 'error',
+    'no-constructor-return': 'error',
     'no-div-regex': 'error',
     'no-empty-function': 'error',
     'no-eq-null': 'error',
