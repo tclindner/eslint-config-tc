@@ -7,8 +7,8 @@ module.exports = {
       'error',
       {
         min: 1,
-        max: 40
-      }
+        max: 40,
+      },
     ],
     'line-comment-position': ['error', {position: 'above'}],
     'max-depth': ['error', 4],
@@ -38,10 +38,10 @@ module.exports = {
       {blankLine: 'always', prev: '*', next: 'cjs-export'},
       {blankLine: 'any', prev: 'cjs-export', next: 'cjs-export'},
       {blankLine: 'any', prev: 'cjs-import', next: '*'},
-      {blankLine: 'any', prev: 'cjs-import', next: 'cjs-import'}
+      {blankLine: 'any', prev: 'cjs-import', next: 'cjs-import'},
     ],
     'prefer-exponentiation-operator': 'error',
     'sort-vars': 'error',
-    'spaced-comment': ['error', 'always']
-  }
+    'spaced-comment': ['error', 'always'],
+  },
 };

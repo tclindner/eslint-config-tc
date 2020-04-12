@@ -3,6 +3,6 @@ module.exports = {
     'max-classes-per-file': 'error',
     'no-duplicate-imports': 'error',
     'no-useless-rename': 'error',
-    'prefer-const': 'error'
-  }
+    'prefer-const': 'error',
+  },
 };

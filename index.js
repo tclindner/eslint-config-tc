@@ -17,25 +17,25 @@ module.exports = {
     node,
     style,
     variables,
-    prettier
+    prettier,
   ],
   plugins: ['jest', 'prettier'],
   parserOptions: {
     ecmaVersion: 2018,
-    sourceType: 'module'
+    sourceType: 'module',
   },
   env: {
-    node: true
+    node: true,
   },
   rules: {
-    strict: 'error'
+    strict: 'error',
   },
   overrides: [
     {
       files: ['**/*.spec.js', '**/*.test.js', '**/tests-*.js'],
       env: {
         jest: true,
-        mocha: true
+        mocha: true,
       },
       rules: {
         'array-bracket-newline': 'off',
@@ -46,8 +46,8 @@ module.exports = {
           'error',
           {
             fn: 'test',
-            withinDescribe: 'test'
-          }
+            withinDescribe: 'test',
+          },
         ],
         'jest/expect-expect': 'error',
         'jest/no-alias-methods': 'error',
@@ -107,9 +107,9 @@ module.exports = {
           {blankLine: 'any', prev: '*', next: 'export'},
           {blankLine: 'any', prev: '*', next: 'cjs-export'},
           {blankLine: 'any', prev: 'cjs-import', next: '*'},
-          {blankLine: 'any', prev: 'cjs-import', next: 'cjs-import'}
-        ]
-      }
-    }
-  ]
+          {blankLine: 'any', prev: 'cjs-import', next: 'cjs-import'},
+        ],
+      },
+    },
+  ],
 };

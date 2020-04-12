@@ -4,10 +4,9 @@ module.exports = {
       'error',
       {
         bracketSpacing: false,
-        endOfLine: 'lf',
         printWidth: 124,
-        singleQuote: true
-      }
-    ]
-  }
+        singleQuote: true,
+      },
+    ],
+  },
 };
