@@ -14,6 +14,6 @@ module.exports = {
     'no-unmodified-loop-condition': 'error',
     'no-unused-expressions': 'error',
     'no-useless-call': 'error',
-    'no-warning-comments': 'warn'
-  }
+    'no-warning-comments': 'warn',
+  },
 };
