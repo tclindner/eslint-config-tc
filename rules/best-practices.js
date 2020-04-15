@@ -15,5 +15,6 @@ module.exports = {
     'no-unused-expressions': 'error',
     'no-useless-call': 'error',
     'no-warning-comments': 'warn',
+    'require-await': 'error',
   },
 };
