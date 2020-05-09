@@ -5,7 +5,7 @@
 
 [![license](https://img.shields.io/github/license/tclindner/eslint-config-tc.svg?maxAge=2592000&style=flat-square)](https://github.com/tclindner/eslint-config-tc/blob/master/LICENSE)
 [![npm](https://img.shields.io/npm/v/eslint-config-tc.svg?maxAge=2592000?style=flat-square)](https://www.npmjs.com/package/eslint-config-tc)
-[![CircleCI](https://circleci.com/gh/tclindner/eslint-config-tc.svg?style=svg&circle-token=76cd4906598cc891780e51115a0c8269700a64ec)](https://circleci.com/gh/tclindner/eslint-config-tc)
+![ci](https://github.com/tclindner/eslint-config-tc/workflows/ci/badge.svg?branch=master)
 [![Dependency Status](https://david-dm.org/tclindner/eslint-config-tc.svg?style=flat-square)](https://david-dm.org/tclindner/eslint-config-tc)
 [![devDependency Status](https://david-dm.org/tclindner/eslint-config-tc/dev-status.svg?style=flat-square)](https://david-dm.org/tclindner/eslint-config-tc#info=devDependencies)
 
