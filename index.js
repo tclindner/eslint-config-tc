@@ -109,6 +109,6 @@ module.exports = {
           {blankLine: 'any', prev: 'cjs-import', next: 'cjs-import'},
         ],
       },
-    }
-],
+    },
+  ],
 };
