@@ -5,7 +5,7 @@ const node = require.resolve('./rules/node');
 const style = require.resolve('./rules/style');
 const variables = require.resolve('./rules/variables');
 const prettier = require.resolve('./rules/prettier');
-const testFileOverrides = require('./overrides/testFiles');
+const testFileOverrides = require.resolve('./overrides/testFiles');
 
 module.exports = {
   extends: [
