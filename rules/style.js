@@ -3,13 +3,6 @@ module.exports = {
     camelcase: 'error',
     'func-names': 'off',
     'func-style': ['error', 'expression'],
-    'id-length': [
-      'error',
-      {
-        min: 1,
-        max: 40,
-      },
-    ],
     'line-comment-position': ['error', {position: 'above'}],
     'max-depth': ['error', 4],
     'max-lines-per-function': 'error',
@@ -20,7 +13,6 @@ module.exports = {
     'new-cap': 'error',
     'no-inline-comments': 'error',
     'no-negated-condition': 'error',
-    'no-underscore-dangle': 'off',
     'padding-line-between-statements': [
       'error',
       {blankLine: 'always', prev: '*', next: 'return'},
@@ -42,6 +34,5 @@ module.exports = {
     ],
     'prefer-exponentiation-operator': 'error',
     'sort-vars': 'error',
-    'spaced-comment': ['error', 'always'],
   },
 };
