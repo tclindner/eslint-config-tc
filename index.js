@@ -9,6 +9,7 @@ const prettier = require.resolve('./rules/prettier');
 module.exports = {
   extends: [
     'eslint-config-airbnb-base',
+    'eslint:recommended',
     'eslint-config-prettier',
     'plugin:eslint-comments/recommended',
     bestPractices,
