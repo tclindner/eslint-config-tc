@@ -32,7 +32,5 @@ module.exports = {
   rules: {
     strict: 'error',
   },
-  overrides: [
-    testFileOverrides
-  ],
+  overrides: [testFileOverrides],
 };
