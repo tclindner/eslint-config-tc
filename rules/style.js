@@ -13,6 +13,7 @@ module.exports = {
     'new-cap': 'error',
     'no-inline-comments': 'error',
     'no-negated-condition': 'error',
+    'no-underscore-dangle': 'off',
     'padding-line-between-statements': [
       'error',
       {blankLine: 'always', prev: '*', next: 'return'},
