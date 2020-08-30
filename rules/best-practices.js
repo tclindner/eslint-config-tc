@@ -15,6 +15,7 @@ module.exports = {
     'no-unmodified-loop-condition': 'error',
     'no-unused-expressions': 'error',
     'no-useless-call': 'error',
+    'no-unreachable-loop': 'error',
     'no-warning-comments': 'warn',
     'require-await': 'error',
   },
