@@ -11,6 +11,7 @@ module.exports = {
     'no-implicit-globals': 'error',
     'no-labels': 'error',
     'no-param-reassign': 'error',
+    'no-promise-executor-return': 'error',
     'no-unmodified-loop-condition': 'error',
     'no-unused-expressions': 'error',
     'no-useless-call': 'error',
