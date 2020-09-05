@@ -64,7 +64,7 @@ module.exports = {
         'jest/no-large-snapshots': 'error',
         'jest/no-standalone-expect': 'error',
         'jest/no-test-prefixes': 'error',
-        'jest/no-test-callback': 'error',
+        'jest/no-done-callback': 'error',
         'jest/no-test-return-statement': 'error',
         'jest/no-truthy-falsy': 'error',
         'jest/no-try-expect': 'error',
