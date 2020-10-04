@@ -1,7 +1,7 @@
 const {describe, test, expect} = require('@jest/globals');
 const eslint = require('eslint');
 const isPlainObj = require('is-plain-obj');
-const eslintConfig = require('../index.js');
+const eslintConfig = require('..');
 
 describe('eslint config tests', () => {
   describe('eslint object', () => {
@@ -31,8 +31,8 @@ describe('eslint config tests', () => {
   describe('run eslint and make sure it runs', () => {
     test('eslint should run without failing', () => {
       const code = 'console.log("doh, I used the wrong quotes");\n';
-      const expectedErrorLineNum = 1;
-      const expectedErrorColumnNum = 1;
+      const expectedErrorLineNumber = 1;
+      const expectedErrorColumnNumber = 1;
       const linter = new eslint.CLIEngine({
         useEslintrc: false,
         baseConfig: eslintConfig,
@@ -42,8 +42,8 @@ describe('eslint config tests', () => {
       const error = errors[0];
 
       expect(error.ruleId).toStrictEqual('no-console');
-      expect(error.line).toStrictEqual(expectedErrorLineNum);
-      expect(error.column).toStrictEqual(expectedErrorColumnNum);
+      expect(error.line).toStrictEqual(expectedErrorLineNumber);
+      expect(error.column).toStrictEqual(expectedErrorColumnNumber);
       expect(error.message).toStrictEqual('Unexpected console statement.');
     });
   });
