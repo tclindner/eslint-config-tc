@@ -1,3 +1,4 @@
+const {describe, test, expect} = require('@jest/globals');
 const eslint = require('eslint');
 const isPlainObj = require('is-plain-obj');
 const eslintConfig = require('../index.js');

@@ -35,10 +35,6 @@ module.exports = {
   overrides: [
     {
       files: ['**/*.spec.js', '**/*.test.js', '**/tests-*.js'],
-      env: {
-        jest: true,
-        mocha: true,
-      },
       rules: {
         'array-bracket-newline': 'off',
         'array-element-newline': 'off',
