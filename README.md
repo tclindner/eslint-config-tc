@@ -31,7 +31,7 @@ First thing first, let's make sure you have the necessary pre-requisites.
 npx install-peerdeps --dev eslint-config-tc
 ```
 
-> eslint, eslint-plugin-import, eslint-plugin-prettier, and prettier are peer dependencies and must be installed.
+> eslint, eslint-plugin-eslint-comments, eslint-plugin-import, eslint-plugin-jest, eslint-plugin-prettier, eslint-plugin-unicorn, and prettier are peer dependencies and must be installed.
 
 ## Usage
 
