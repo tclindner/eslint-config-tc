@@ -6,6 +6,7 @@ const style = require.resolve('./rules/style');
 const variables = require.resolve('./rules/variables');
 const prettier = require.resolve('./rules/prettier');
 const jestRules = require.resolve('./rules/jest');
+const unicornRules = require.resolve('./rules/unicorn');
 
 module.exports = {
   extends: [
@@ -23,6 +24,7 @@ module.exports = {
     variables,
     prettier,
     jestRules,
+    unicornRules,
   ],
   plugins: ['jest', 'prettier'],
   parserOptions: {
