@@ -7,5 +7,6 @@ module.exports = {
         peerDependencies: false,
       },
     ],
+    'import/prefer-default-export': 'off',
   },
 };
