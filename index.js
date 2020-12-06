@@ -51,6 +51,7 @@ module.exports = {
         'max-statements': 'off',
         'newline-after-var': 'off',
         'no-process-env': 'off',
+        'no-undefined': 'off',
         'object-curly-newline': 'off',
         'padding-line-between-statements': [
           'error',
