@@ -7,6 +7,7 @@ const variables = require.resolve('./rules/variables');
 const prettier = require.resolve('./rules/prettier');
 const jestRules = require.resolve('./rules/jest');
 const unicornRules = require.resolve('./rules/unicorn');
+const importRules = require.resolve('./rules/import');
 
 module.exports = {
   extends: [
@@ -25,6 +26,7 @@ module.exports = {
     prettier,
     jestRules,
     unicornRules,
+    importRules,
   ],
   plugins: ['jest', 'prettier'],
   parserOptions: {
@@ -51,6 +53,7 @@ module.exports = {
         'max-statements': 'off',
         'newline-after-var': 'off',
         'no-process-env': 'off',
+        'no-undefined': 'off',
         'object-curly-newline': 'off',
         'padding-line-between-statements': [
           'error',
