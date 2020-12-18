@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-tc",
-  "version": "16.3.1",
+  "version": "16.4.0",
   "description": "ESLint shareable config for JavaScript projects",
   "keywords": [
     "eslintconfig",
@@ -57,7 +57,7 @@
     "eslint-plugin-import": "^2.0.0",
     "eslint-plugin-jest": "^24.0.0",
     "eslint-plugin-prettier": "^3.0.0",
-    "eslint-plugin-unicorn": "^23.0.0",
+    "eslint-plugin-unicorn": "^23.0.0 || ^24.0.0",
     "prettier": "^2.0.0"
   },
   "engines": {
