@@ -17,6 +17,7 @@ module.exports = {
     'plugin:eslint-comments/recommended',
     'plugin:jest/recommended',
     'plugin:unicorn/recommended',
+    'prettier/unicorn',
     bestPractices,
     errors,
     es6,
