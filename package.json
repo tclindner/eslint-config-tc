@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-tc",
-  "version": "16.5.0",
+  "version": "17.0.0",
   "description": "ESLint shareable config for JavaScript projects",
   "keywords": [
     "eslintconfig",
