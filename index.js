@@ -13,11 +13,10 @@ module.exports = {
   extends: [
     'eslint-config-airbnb-base',
     'eslint:recommended',
-    'eslint-config-prettier',
     'plugin:eslint-comments/recommended',
     'plugin:jest/recommended',
     'plugin:unicorn/recommended',
-    'prettier/unicorn',
+    'eslint-config-prettier',
     bestPractices,
     errors,
     es6,
