@@ -4,5 +4,6 @@ module.exports = {
     'unicorn/prevent-abbreviations': 'off',
     'unicorn/no-array-for-each': 'off',
     'unicorn/prefer-module': 'off',
+    'unicorn/prefer-node-protocol': 'off',
   },
 };
