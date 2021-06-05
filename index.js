@@ -73,6 +73,7 @@ module.exports = {
           {blankLine: 'any', prev: 'cjs-import', next: '*'},
           {blankLine: 'any', prev: 'cjs-import', next: 'cjs-import'},
         ],
+        'unicorn/prefer-prototype-methods': 'off',
       },
     },
   ],
