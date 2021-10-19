@@ -42,7 +42,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-unicorn": "^37.0.1",
     "is-plain-obj": "^3.0.0",
-    "jest": "^27.3.0",
+    "jest": "^27.3.1",
     "npm-package-json-lint": "^5.4.0",
     "npm-package-json-lint-config-tc": "^4.1.0",
     "prettier": "^2.4.1"
