@@ -40,7 +40,7 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-jest": "^25.2.4",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-unicorn": "^38.0.0",
+    "eslint-plugin-unicorn": "^38.0.1",
     "is-plain-obj": "^3.0.0",
     "jest": "^27.3.1",
     "npm-package-json-lint": "^5.4.1",
