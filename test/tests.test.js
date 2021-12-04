@@ -1,7 +1,7 @@
 const {describe, test, expect} = require('@jest/globals');
-const eslint = require('eslint');
+const {ESLint} = require('eslint');
 const isPlainObj = require('is-plain-obj');
-const eslintConfig = require('..');
+const eslintConfig = require('../index');
 
 describe('eslint config tests', () => {
   describe('eslint object', () => {
@@ -29,17 +29,15 @@ describe('eslint config tests', () => {
   });
 
   describe('run eslint and make sure it runs', () => {
-    test('eslint should run without failing', () => {
+    test('eslint should run without failing', async () => {
       const code = 'console.log("doh, I used the wrong quotes");\n';
       const expectedErrorLineNumber = 1;
       const expectedErrorColumnNumber = 1;
-      const linter = new eslint.CLIEngine({
-        useEslintrc: false,
-        baseConfig: eslintConfig,
-      });
+      const linter = new ESLint();
 
-      const errors = linter.executeOnText(code).results[0].messages;
-      const error = errors[0];
+      const results = await linter.lintText(code);
+      const errorMessages = results[0].messages;
+      const error = errorMessages[0];
 
       expect(error.ruleId).toStrictEqual('no-console');
       expect(error.line).toStrictEqual(expectedErrorLineNumber);
