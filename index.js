@@ -13,7 +13,6 @@ module.exports = {
   extends: [
     'eslint-config-airbnb-base',
     'eslint:recommended',
-    'plugin:eslint-comments/recommended',
     'plugin:jest/recommended',
     'plugin:unicorn/recommended',
     'eslint-config-prettier',
@@ -45,7 +44,6 @@ module.exports = {
       rules: {
         'array-bracket-newline': 'off',
         'array-element-newline': 'off',
-        'eslint-comments/no-unused-disable': 'error',
         'id-length': 'off',
         'max-lines': 'off',
         'max-lines-per-function': 'off',
