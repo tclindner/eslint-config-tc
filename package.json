@@ -38,13 +38,13 @@
     "eslint": "^8.10.0",
     "eslint-formatter-pretty": "^4.1.0",
     "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-jest": "^25.7.0",
+    "eslint-plugin-jest": "^26.1.1",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-unicorn": "^41.0.0",
     "is-plain-obj": "^3.0.0",
     "jest": "^27.5.1",
     "npm-package-json-lint": "^5.4.2",
-    "npm-package-json-lint-config-tc": "^4.1.0",
+    "npm-package-json-lint-config-tc": "^5.0.0",
     "prettier": "^2.5.1"
   },
   "dependencies": {
@@ -60,7 +60,7 @@
     "prettier": "^2.0.0"
   },
   "engines": {
-    "node": ">=12.0.0",
+    "node": ">=14.0.0",
     "npm": ">=6.0.0"
   },
   "license": "MIT"
