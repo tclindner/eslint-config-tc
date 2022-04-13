@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@jest/globals": "^27.5.1",
-    "enhanced-resolve": "^5.9.2",
+    "enhanced-resolve": "^5.9.3",
     "eslint": "^8.13.0",
     "eslint-formatter-pretty": "^4.1.0",
     "eslint-plugin-import": "^2.26.0",
