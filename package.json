@@ -33,7 +33,7 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@jest/globals": "^28.0.3",
+    "@jest/globals": "^28.1.0",
     "enhanced-resolve": "^5.9.3",
     "eslint": "^8.15.0",
     "eslint-formatter-pretty": "^4.1.0",
