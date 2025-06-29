@@ -1,3 +1,11 @@
+const baseBestPractices = require.resolve('./rules/base/best-practices');
+const baseErrors = require.resolve('./rules/base/errors');
+const baseNode = require.resolve('./rules/base/node');
+const baseStyle = require.resolve('./rules/base/style');
+const baseVariables = require.resolve('./rules/base/variables');
+const baseEs6 = require.resolve('./rules/base/es6');
+const baseImports = require.resolve('./rules/base/imports');
+const baseStrict = require.resolve('./rules/base/strict');
 const bestPractices = require.resolve('./rules/best-practices');
 const errors = require.resolve('./rules/errors');
 const es6 = require.resolve('./rules/es6');
@@ -11,7 +19,14 @@ const importRules = require.resolve('./rules/import');
 
 module.exports = {
   extends: [
-    'eslint-config-airbnb-base',
+    baseBestPractices,
+    baseErrors,
+    baseNode,
+    baseStyle,
+    baseVariables,
+    baseEs6,
+    baseImports,
+    baseStrict,
     'eslint:recommended',
     'plugin:jest/recommended',
     'plugin:unicorn/recommended',
