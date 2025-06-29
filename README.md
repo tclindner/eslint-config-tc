@@ -20,8 +20,8 @@ First thing first, let's make sure you have the necessary pre-requisites.
 
 #### Node
 
-* [Node.js](https://nodejs.org/) - v16.0.0+
-* [npm](http://npmjs.com) - v8.0.0+
+* [Node.js](https://nodejs.org/) - v20.0.0+
+* [npm](http://npmjs.com) - v10.0.0+
 
 ### Command
 
