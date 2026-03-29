@@ -5,8 +5,6 @@
 [![license](https://img.shields.io/github/license/tclindner/eslint-config-tc.svg?maxAge=2592000&style=flat-square)](https://github.com/tclindner/eslint-config-tc/blob/master/LICENSE)
 [![npm](https://img.shields.io/npm/v/eslint-config-tc.svg?maxAge=2592000?style=flat-square)](https://www.npmjs.com/package/eslint-config-tc)
 ![ci](https://github.com/tclindner/eslint-config-tc/workflows/ci/badge.svg?branch=master)
-[![Dependency Status](https://david-dm.org/tclindner/eslint-config-tc.svg?style=flat-square)](https://david-dm.org/tclindner/eslint-config-tc)
-[![devDependency Status](https://david-dm.org/tclindner/eslint-config-tc/dev-status.svg?style=flat-square)](https://david-dm.org/tclindner/eslint-config-tc#info=devDependencies)
 
 ## What is eslint-config-tc?
 
@@ -29,27 +27,33 @@ First thing first, let's make sure you have the necessary pre-requisites.
 npx install-peerdeps --dev eslint-config-tc
 ```
 
-> eslint, eslint-plugin-import, eslint-plugin-jest, eslint-plugin-prettier, eslint-plugin-unicorn, and prettier are peer dependencies and must be installed.
+> @eslint/js, eslint, eslint-plugin-import-x, eslint-plugin-jest, eslint-plugin-prettier, eslint-plugin-unicorn, and prettier are peer dependencies and must be installed.
 
 ## Usage
 
-Add the following to your `.eslintrc.json` file:
+This package exports a flat config array for use with ESLint 10+. Create an `eslint.config.mjs` file in your project root:
 
-```json
-{
-  "extends": "eslint-config-tc"
-}
+```js
+import tcConfig from 'eslint-config-tc';
+
+export default [
+  ...tcConfig,
+];
 ```
 
-If you need to override a rule, your `.eslintrc.json` file should look like the example below. All shared rules will be used, but `eqeqeq` will be turned off.
+If you need to override a rule, add a config object after spreading:
 
-```json
-{
-  "extends": "eslint-config-tc",
-  "rules": {
-    "eqeqeq": "off"
-  }
-}
+```js
+import tcConfig from 'eslint-config-tc';
+
+export default [
+  ...tcConfig,
+  {
+    rules: {
+      eqeqeq: 'off',
+    },
+  },
+];
 ```
 
 ## Contributing
