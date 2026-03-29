@@ -17,11 +17,21 @@ import jestRules from './rules/jest.js';
 import unicornRules from './rules/unicorn.js';
 import importRules from './rules/imports.js';
 
+// Linter config
 export default [
+  // ESLint recommended
   js.configs.recommended,
+
+  // Jest recommended flag config
   jestPlugin.configs['flat/recommended'],
+
+  // Unicorn recommended config
   unicornPlugin.configs.recommended,
+
+  // Prettier config - disables formatting rules that conflict with prettier
   prettierConfig,
+
+  // Main config
   {
     plugins: {
       jest: jestPlugin,
@@ -59,9 +69,18 @@ export default [
       strict: 'error',
     },
   },
+
   // Test file overrides - relax certain rules for test files
   {
-    files: ['**/*.spec.js', '**/*.test.js', '**/tests-*.js', '**/*.spec.ts', '**/*.test.ts', '**/tests-*.ts'],
+    files: [
+      '**/*.spec.js',
+      '**/*.test.js',
+      '**/*.test.mjs',
+      '**/tests-*.js',
+      '**/*.spec.ts',
+      '**/*.test.ts',
+      '**/tests-*.ts',
+    ],
     rules: {
       'id-length': 'off',
       'max-lines': 'off',

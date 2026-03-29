@@ -1,15 +1,4 @@
 export default {
-  settings: {
-    'import-x/resolver': {
-      node: {
-        extensions: ['.mjs', '.js', '.json'],
-      },
-    },
-    'import-x/extensions': ['.js', '.mjs', '.jsx'],
-    'import-x/core-modules': [],
-    'import-x/ignore': ['node_modules', String.raw`\.(coffee|scss|css|less|hbs|svg|json)$`],
-  },
-
   rules: {
     // Static analysis:
 
@@ -119,7 +108,6 @@ export default {
 
     // No Node.js builtin modules
     // https://github.com/un-ts/eslint-plugin-import-x/blob/master/docs/rules/no-nodejs-modules.md
-    // TODO: enable?
     'import-x/no-nodejs-modules': 'off',
 
     // Style guide:
@@ -133,7 +121,6 @@ export default {
     'import-x/no-duplicates': 'error',
 
     // disallow namespace imports
-    // TODO: enable?
     // https://github.com/un-ts/eslint-plugin-import-x/blob/master/docs/rules/no-namespace.md
     'import-x/no-namespace': 'off',
 
@@ -151,7 +138,6 @@ export default {
 
     // ensure absolute imports are above relative imports and that unassigned imports are ignored
     // https://github.com/un-ts/eslint-plugin-import-x/blob/master/docs/rules/order.md
-    // TODO: enforce a stricter convention in module import order?
     'import-x/order': ['error', {groups: [['builtin', 'external', 'internal']]}],
 
     // Require a newline after the last import/require in a group
@@ -190,8 +176,6 @@ export default {
     // Warn if a module could be mistakenly parsed as a script by a consumer
     // leveraging Unambiguous JavaScript Grammar
     // https://github.com/un-ts/eslint-plugin-import-x/blob/master/docs/rules/unambiguous.md
-    // this should not be enabled until this proposal has at least been *presented* to TC39.
-    // At the moment, it's not a thing.
     'import-x/unambiguous': 'off',
 
     // Forbid Webpack loader syntax in imports
@@ -200,7 +184,6 @@ export default {
 
     // Prevent unassigned imports
     // https://github.com/un-ts/eslint-plugin-import-x/blob/master/docs/rules/no-unassigned-import.md
-    // importing for side effects is perfectly acceptable, if you need side effects.
     'import-x/no-unassigned-import': 'off',
 
     // Prevent importing the default as if it were named
@@ -223,7 +206,6 @@ export default {
 
     // This rule enforces that all exports are declared at the bottom of the file.
     // https://github.com/un-ts/eslint-plugin-import-x/blob/98acd6afd04dcb6920b81330114e146dc8532ea4/docs/rules/exports-last.md
-    // TODO: enable?
     'import-x/exports-last': 'off',
 
     // Reports when named exports are not grouped together in a single export declaration
@@ -268,7 +250,6 @@ export default {
 
     // Reports modules without any exports, or with unused exports
     // https://github.com/un-ts/eslint-plugin-import-x/blob/f63dd261809de6883b13b6b5b960e6d7f42a7813/docs/rules/no-unused-modules.md
-    // TODO: enable once it supports CJS
     'import-x/no-unused-modules': [
       'off',
       {
@@ -293,12 +274,10 @@ export default {
 
     // enforce a consistent style for type specifiers (inline or top-level)
     // https://github.com/un-ts/eslint-plugin-import-x/blob/d5fc8b670dc8e6903dbb7b0894452f60c03089f5/docs/rules/consistent-type-specifier-style.md
-    // TODO, semver-major: enable (just in case)
     'import-x/consistent-type-specifier-style': ['off', 'prefer-inline'],
 
     // Reports the use of empty named import blocks.
     // https://github.com/un-ts/eslint-plugin-import-x/blob/d5fc8b670dc8e6903dbb7b0894452f60c03089f5/docs/rules/no-empty-named-blocks.md
-    // TODO, semver-minor: enable
     'import-x/no-empty-named-blocks': 'off',
   },
 };

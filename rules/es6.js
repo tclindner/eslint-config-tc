@@ -2,7 +2,6 @@ export default {
   rules: {
     // enforces no braces where they can be omitted
     // https://eslint.org/docs/rules/arrow-body-style
-    // TODO: enable requireReturnForObjectLiteral?
     'arrow-body-style': [
       'error',
       'as-needed',
@@ -143,18 +142,6 @@ export default {
     // disallow generator functions that do not have yield
     // https://eslint.org/docs/rules/require-yield
     'require-yield': 'error',
-
-    // import sorting
-    // https://eslint.org/docs/rules/sort-imports
-    'sort-imports': [
-      'off',
-      {
-        ignoreCase: false,
-        ignoreDeclarationSort: false,
-        ignoreMemberSort: false,
-        memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
-      },
-    ],
 
     // require a Symbol description
     // https://eslint.org/docs/rules/symbol-description
