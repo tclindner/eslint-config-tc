@@ -6,6 +6,7 @@ import importPlugin from 'eslint-plugin-import-x';
 import prettierConfig from 'eslint-config-prettier';
 import globals from 'globals';
 
+import style from './rules/style.js';
 import strict from './rules/strict.js';
 import bestPractices from './rules/best-practices.js';
 import errors from './rules/errors.js';
@@ -45,6 +46,7 @@ export default [
       'import-x/ignore': ['node_modules', String.raw`\.(coffee|scss|css|less|hbs|svg|json)$`],
     },
     rules: {
+      ...style.rules,
       ...strict.rules,
       ...bestPractices.rules,
       ...errors.rules,
