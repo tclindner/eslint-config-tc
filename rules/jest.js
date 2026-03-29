@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   rules: {
     'jest/consistent-test-it': [
       'error',
