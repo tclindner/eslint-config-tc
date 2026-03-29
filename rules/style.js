@@ -1,7 +1,8 @@
+// Style rules that are NOT formatting (Prettier handles formatting).
 export default {
   rules: {
     // require camel case names
-    camelcase: ['error', {properties: 'never', ignoreDestructuring: false}],
+    camelcase: 'error',
 
     // enforce or disallow capitalization of the first letter of a comment
     // https://eslint.org/docs/rules/capitalized-comments
@@ -43,8 +44,7 @@ export default {
 
     // enforces use of function declarations or expressions
     // https://eslint.org/docs/rules/func-style
-    // TODO: enable
-    'func-style': ['off', 'expression'],
+    'func-style': ['error', 'expression'],
 
     // disallow specified identifiers
     // https://eslint.org/docs/rules/id-denylist
@@ -59,15 +59,7 @@ export default {
 
     // enforce position of line comments
     // https://eslint.org/docs/rules/line-comment-position
-    // TODO: enable?
-    'line-comment-position': [
-      'off',
-      {
-        position: 'above',
-        ignorePattern: '',
-        applyDefaultPatterns: true,
-      },
-    ],
+    'line-comment-position': ['error', {position: 'above'}],
 
     // enforces empty lines around comments
     'lines-around-comment': 'off',
@@ -98,35 +90,19 @@ export default {
 
     // enforce a maximum function length
     // https://eslint.org/docs/rules/max-lines-per-function
-    'max-lines-per-function': [
-      'off',
-      {
-        max: 50,
-        skipBlankLines: true,
-        skipComments: true,
-        IIFEs: true,
-      },
-    ],
+    'max-lines-per-function': 'error',
 
     // specify the maximum depth callbacks can be nested
-    'max-nested-callbacks': 'off',
+    'max-nested-callbacks': ['error', 4],
 
     // limits the number of parameters that can be used in the function declaration.
-    'max-params': ['off', 3],
+    'max-params': ['error', 6],
 
     // specify the maximum number of statement allowed in a function
-    'max-statements': ['off', 10],
+    'max-statements': ['error', 25],
 
     // require a capital letter for constructors
-    'new-cap': [
-      'error',
-      {
-        newIsCap: true,
-        newIsCapExceptions: [],
-        capIsNew: false,
-        capIsNewExceptions: ['Immutable.Map', 'Immutable.Set', 'Immutable.List'],
-      },
-    ],
+    'new-cap': 'error',
 
     // disallow use of the Array constructor
     'no-array-constructor': 'error',
@@ -140,7 +116,7 @@ export default {
     'no-continue': 'error',
 
     // disallow comments inline after code
-    'no-inline-comments': 'off',
+    'no-inline-comments': 'error',
 
     // disallow if as the only statement in an else block
     // https://eslint.org/docs/rules/no-lonely-if
@@ -174,10 +150,14 @@ export default {
 
     // disallow negated conditions
     // https://eslint.org/docs/rules/no-negated-condition
-    'no-negated-condition': 'off',
+    'no-negated-condition': 'error',
 
     // disallow nested ternary expressions
     'no-nested-ternary': 'error',
+
+    // disallow calls to the Object constructor
+    // https://eslint.org/docs/rules/no-object-constructor
+    'no-object-constructor': 'error',
 
     // disallow use of unary operators, ++ and --
     // https://eslint.org/docs/rules/no-plusplus
@@ -212,15 +192,7 @@ export default {
 
     // disallow dangling underscores in identifiers
     // https://eslint.org/docs/rules/no-underscore-dangle
-    'no-underscore-dangle': [
-      'error',
-      {
-        allow: [],
-        allowAfterThis: false,
-        allowAfterSuper: false,
-        enforceInMethodNames: true,
-      },
-    ],
+    'no-underscore-dangle': 'off',
 
     // disallow the use of Boolean literals in conditional expressions
     // also, prefer `a || b` over `a ? a : b`
@@ -236,7 +208,25 @@ export default {
 
     // Require or disallow padding lines between statements
     // https://eslint.org/docs/rules/padding-line-between-statements
-    'padding-line-between-statements': 'off',
+    'padding-line-between-statements': [
+      'error',
+      {blankLine: 'always', prev: '*', next: 'return'},
+      {blankLine: 'always', prev: ['const', 'let', 'var'], next: '*'},
+      {blankLine: 'any', prev: ['const', 'let', 'var'], next: ['const', 'let', 'var']},
+      {blankLine: 'always', prev: 'directive', next: '*'},
+      {blankLine: 'always', prev: ['for', 'do', 'while'], next: '*'},
+      {blankLine: 'always', prev: '*', next: 'for'},
+      {blankLine: 'always', prev: 'import', next: '*'},
+      {blankLine: 'any', prev: 'import', next: 'import'},
+      {blankLine: 'always', prev: 'if', next: '*'},
+      {blankLine: 'always', prev: 'function', next: '*'},
+      {blankLine: 'always', prev: '*', next: 'function'},
+      {blankLine: 'always', prev: '*', next: 'export'},
+      {blankLine: 'always', prev: '*', next: 'cjs-export'},
+      {blankLine: 'any', prev: 'cjs-export', next: 'cjs-export'},
+      {blankLine: 'any', prev: 'cjs-import', next: '*'},
+      {blankLine: 'any', prev: 'cjs-import', next: 'cjs-import'},
+    ],
 
     // Disallow the use of Math.pow in favor of the ** operator
     // https://eslint.org/docs/rules/prefer-exponentiation-operator

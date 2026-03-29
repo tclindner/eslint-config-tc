@@ -48,6 +48,10 @@ export default {
     // https://eslint.org/docs/rules/dot-notation
     'dot-notation': ['error', {allowKeywords: true}],
 
+    // enforces consistent newlines before and after dots
+    // https://eslint.org/docs/rules/dot-location
+    'dot-location': ['error', 'property'],
+
     // require the use of === and !==
     // https://eslint.org/docs/rules/eqeqeq
     eqeqeq: ['error', 'always', {null: 'ignore'}],
@@ -132,6 +136,10 @@ export default {
 
     // disallow implicit type conversions
     // https://eslint.org/docs/rules/no-implicit-coercion
+    'no-implicit-coercion': 'error',
+
+    // disallow implicit type conversions
+    // https://eslint.org/docs/rules/no-implicit-globals
     'no-implicit-globals': 'error',
 
     // disallow use of eval()-like methods
@@ -170,6 +178,15 @@ export default {
       },
     ],
 
+    // disallow use of multiple spaces
+    // https://eslint.org/docs/rules/no-multi-spaces
+    'no-multi-spaces': [
+      'error',
+      {
+        ignoreEOLComments: false,
+      },
+    ],
+
     // disallow use of multiline strings
     // https://eslint.org/docs/rules/no-multi-str
     'no-multi-str': 'error',
@@ -192,6 +209,7 @@ export default {
 
     // Disallow calls to the Object constructor without an argument
     // https://eslint.org/docs/latest/rules/no-object-constructor
+    // TODO: enable, semver-major
     'no-object-constructor': 'error',
 
     // disallow use of (old style) octal literals
@@ -383,6 +401,10 @@ export default {
     // requires to declare all vars on top of their containing scope
     // https://eslint.org/docs/rules/vars-on-top
     'vars-on-top': 'error',
+
+    // require immediate function invocation to be wrapped in paratheses
+    // https://eslint.org/docs/rules/wrap-iife
+    'wrap-iife': ['error', 'outside', {functionPrototypeMethods: false}],
 
     // require or disallow Yoda conditions
     // https://eslint.org/docs/rules/yoda
