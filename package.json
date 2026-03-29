@@ -33,11 +33,12 @@
     "eslint": "eslint .",
     "lint": "npm run npmpackagejsonlint && npm run eslint",
     "npmpackagejsonlint": "npmPkgJsonLint .",
-    "test": "NODE_OPTIONS='--experimental-vm-modules' jest"
+    "test": "cross-env NODE_OPTIONS='--experimental-vm-modules' jest"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@jest/globals": "^30.3.0",
+    "cross-env": "^10.1.0",
     "eslint": "^10.1.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import-x": "^4.16.2",
