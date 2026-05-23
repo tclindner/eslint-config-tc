@@ -4,6 +4,21 @@ updates:
   directory: "/"
   schedule:
     interval: daily
+  groups:
+    eslint-dependencies:
+      patterns:
+        - "eslint"
+        - "eslint-plugin-*"
+        - "@eslint/*"
+        - "eslint-config-*"
+    jest-dependencies:
+      patterns:
+        - "jest"
+        - "@jest/*"
+    npm-package-json-lint-dependencies:
+      patterns:
+        - "npm-package-json-lint"
+        - "npm-package-json-lint-config-*"
   open-pull-requests-limit: 10
   assignees:
   - tclindner
